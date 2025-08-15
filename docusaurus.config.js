@@ -81,7 +81,7 @@ const config = {
 			// Replace with your project's social card
 			image: "img/docusaurus-social-card.jpg",
 			navbar: {
-				title: "My WriteTechHub Accelerator Portfolio",
+				title: "Christine’s Portfolio",
 				logo: {
 					alt: "My Site Logo",
 					src: "img/logo.svg",
@@ -91,11 +91,11 @@ const config = {
 						type: "docSidebar",
 						sidebarId: "tutorialSidebar",
 						position: "left",
-						label: "Tutorial",
+						label: "Overview",
 					},
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
-						href: "https://github.com/facebook/docusaurus",
+						href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
 						label: "GitHub",
 						position: "right",
 					},
@@ -139,7 +139,7 @@ const config = {
 							},
 							{
 								label: "GitHub",
-								href: "https://github.com/facebook/docusaurus",
+								href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
 							},
 						],
 					},
