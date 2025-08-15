@@ -1,28 +1,41 @@
-# My WriteTech Accelerator Portfolio
+# Website
 
-Welcome! This repository contains all my project work and deliverables from the **WriteTech Accelerator Program**.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-> **Note:**  
-> This portfolio is actively evolving as I progress through the WriteTech Accelerator bootcamp. Here, you'll find hands-on technical writing projects spanning API documentation, automation, AI, DevOps, and Web3—each showcasing modern documentation workflows and tools.
+## Installation
 
-## 👩🏽‍💻 About Me
+```bash
+yarn
+```
 
-I'm a technical writer with a background in software development and a passion for clear, user-focused documentation. This portfolio highlights the practical skills I’ve built during the WriteTech Accelerator.
+## Local Development
 
-## 📁 Project Modules
+```bash
+yarn start
+```
 
-| Module                                         | Folder                                                             | Final Deliverables                                                                             | Live Link         |
-|------------------------------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------|-------------------|
-| Documentation Tooling & Static Site Generators | [`documentation-tooling/`](./docs/documentation-tooling)           | How-to guide for setting up a docs-as-code workflow using Docusaurus                           | _[To be updated]_ |
-| API Documentation & OpenAPI                    | [`api-documentation/`](./docs/api-documentation)                   | Improved documentation for selected endpoints from a real or public API                        | _[To be updated]_ |
-| Automation & Static Site Deployment            | [`docs-automation/`](./docs/docs-automation)                       | Automated checks (style, links, builds) using tools like Vale, Spectral, and GitHub Actions    | _[To be updated]_ |
-| AI for Documentation                           | [`ai-documentation/`](./docs/ai-documentation)                     | Comparison of AI tools or prompt-based documentation using your own examples                   | _[To be updated]_ |
-| DevOps & Cloud Documentation                   | [`devops-cloud-documentation/`](./docs/devops-cloud-documentation) | Step-by-step guide for a DevOps/cloud tool or process (e.g., CI/CD, deployment)                | _[To be updated]_ |
-| Technical Writing in Web3                      | [`web3-documentation/`](./docs/web3-documentation)                 | One of: user guide for a Web3 tool, white paper draft, or improved API doc for a Web3 platform | _[To be updated]_ |
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## 🔗 Additional Links
+## Build
 
-- [LinkedIn](https://linkedin.com/in/christinebelzie)
-- [Website](https://christinebelzie.carrd.co/) Check out my other projects here!
+```bash
+yarn build
+```
 
-Thanks for checking out my work!
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
