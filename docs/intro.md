@@ -19,7 +19,7 @@ I'm a technical writer with a background in software development and a passion f
 
 Check out my projects below:
 
-- [Documentation Tooling Project](/docs/documentation-tooling/intro.md)
+- [Documentation Tooling Project](/docs/documentation-tooling/intro)
 <!-- - [API Documentation](/project-2) -->  
 <!-- - [DevOps Documentation](/project-2) -->  
 <!-- - [Web3 Documentation](/project-2) -->  
