@@ -126,19 +126,15 @@ const config = {
 						],
 					},
 					{
-						title: "Community",
+						title: "Contact",
 						items: [
 							{
-								label: "Stack Overflow",
-								href: "https://stackoverflow.com/questions/tagged/docusaurus",
+								label: "LinkedIn",
+								href: "https://www.linkedin.com/in/christinebelzie/",
 							},
 							{
-								label: "Discord",
-								href: "https://discordapp.com/invite/docusaurus",
-							},
-							{
-								label: "X",
-								href: "https://x.com/docusaurus",
+								label: "X(Twitter)",
+								href: "https://x.com/CodesChrissy",
 							},
 						],
 					},
@@ -156,7 +152,7 @@ const config = {
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+				copyright: `Copyright © ${new Date().getFullYear()} Built by Christine Belzie– WriteTech Accelerator Programme 2025.`,
 			},
 			prism: {
 				theme: prismThemes.github,
