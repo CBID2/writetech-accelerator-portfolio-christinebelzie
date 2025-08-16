@@ -27,19 +27,17 @@ const sidebars = {
 		},
 	],
 	toolingSidebar: [
-		"intro",
 		{
-			type: "category",
-			label: "Tutorial",
-			items: ["tutorial-basics/create-a-document"],
+			type: "doc",
+			label: "Introduction",
+			id: "documentation-tooling/intro",
 		},
 	],
 	apiSidebar: [
-		"intro",
 		{
-			type: "category",
-			label: "Tutorial",
-			items: ["tutorial-basics/create-a-document"],
+			type: "doc",
+			label: "Introduction",
+			id: "api-documentation/intro",
 		},
 	],
 };
