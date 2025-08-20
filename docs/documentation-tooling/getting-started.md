@@ -37,11 +37,11 @@ Here’s how to get started with daily.dev in just a few minutes:
 Install the Chrome or Edge extension to replace your new tab with daily.dev.  
 This keeps you updated every time you open a new tab. You can pause it anytime.  
 
-👉 [Browser Extension Installation Guide](https://docs.daily.dev/docs/getting-started/browser-extension-installation)  
+👉 [Browser Extension Installation Guide](/docs/documentation-tooling/browser-extension-installation-guide.md)  
 
 :::note
 On Android? Download our [Android app](https://play.google.com/store/apps/details?id=com.dailydev.app).  
-On Safari or other browsers? Try the [PWA Setup Guide](https://docs.daily.dev/docs/getting-started/pwa).  
+On Safari or other browsers? Try the [PWA Setup Guide](/docs/documentation-tooling/pwa-installation-guide).  
 :::
 
 ---
