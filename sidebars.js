@@ -31,6 +31,24 @@ const sidebars = {
 			label: "Introduction",
 			id: "documentation-tooling/intro",
 		},
+		{
+			type: "category",
+			label: "Getting Started",
+			link: {
+				type: "doc",
+				id: "documentation-tooling/getting-started", // this doc acts as landing page
+			},
+			items: [
+				{
+					type: "doc",
+					id: "documentation-tooling/browser-extension-installation-guide",
+				},
+				{
+					type: "doc",
+					id: "documentation-tooling/pwa-installation-guide",
+				},
+			],
+		},
 	],
 	apiSidebar: [
 		{
