@@ -45,7 +45,7 @@ const sidebars = {
 				},
 				{
 					type: "doc",
-					id: "documentation-tooling/pwa",
+					id: "documentation-tooling/pwa-installation-guide",
 				},
 			],
 		},

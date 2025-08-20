@@ -1,6 +1,6 @@
 ---
-id: pwa
-title: Progressive Web App (PWA)
+id: pwa-installation-guide
+title: PWA Installation Guide
 ---
 
 # Progressive Web App (PWA)
