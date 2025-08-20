@@ -60,7 +60,7 @@ If you’re on **Safari, Brave, Opera, Vivaldi**, or another browser, we recomme
 
 ## Next Steps
 
-👉 [Customize your feed](https://docs.daily.dev/docs/getting-started/creating-your-feed)  
-👉 [Join Squads](https://docs.daily.dev/docs/squads/overview)  
+👉 [Customize your feed](https://docs.daily.dev/docs/setting-up-your-feed/filtering-content-feed)  
+👉 [Join Squads](https://docs.daily.dev/docs/squads/creating-your-squad)  
 
 ---
