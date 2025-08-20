@@ -41,12 +41,11 @@ const sidebars = {
 			items: [
 				{
 					type: "doc",
-					id: "documentation-tooling/browser-extension-installation-guide",
+					id: "documentation-tooling/browser-extension-installation",
 				},
 				{
 					type: "doc",
-					id: "documentation-tooling/pwa-installation-guide",
-				},
+					id: "documentation-tooling/pwa",
 			],
 		},
 	],
