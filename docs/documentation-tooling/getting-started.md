@@ -17,10 +17,11 @@ Want to learn more? Check out our video below
 
 ---
 
-## ✨ What makes daily.dev special?
+## Quick Start Guide 🚀
 
-- ✨ **Hyper-personalized feed**: Our latest Feed Algorithm (v3.0) learns what you love and delivers relevant articles daily.
-- ✨ **Companion widget**: Upvote, comment, and bookmark directly on an article or video without switching tabs.
-- ✨ **OpenAI-powered summaries**: Quickly digest content with smart TL;DRs.
-- ✨ **Collaborative Squads**: Join topic-focused groups for niche discussions.
-- ✨ **Cross-platform**: Access daily.dev on browser, mobile, or PWA.
+Here's how to get started with daily.dev:
+
+### Step 1: Choose Your Platform 🚀
+
+**Browser Extension** 
+- Install the Chrome or Edge browser extension. This replaces your new tab with daily.dev to serve as a reminder to read new sources daily. It can also be paused anytime so you can focus on what you're working on.
