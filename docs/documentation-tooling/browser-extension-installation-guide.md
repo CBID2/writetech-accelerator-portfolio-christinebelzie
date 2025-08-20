@@ -31,8 +31,7 @@ Currently, the Firefox extension is not supported due to Mozilla review team req
 - Click **Add to Browser** to install.  
 
 :::note
-If you are using Safari, Brave, Opera, Vivaldi, or another browser, we highly recommend using the [Progressive Web App (PWA)](https://docs.daily.dev/docs/getting-started/pwa)
-:::
+If you are using Safari, Brave, Opera, Vivaldi, or another browser, we highly recommend using the [Progressive Web App (PWA)](/docs/documentation-tooling/pwa-installation-guide).
 ---
 
 ### 2. Pin the Extension
