@@ -1,10 +1,8 @@
 # Documentation Tooling Project (Docusaurus Site)
 
-This project involved auditing and restructuring documentation for [Platform Name] using Docusaurus.
+This project involved auditing and restructuring documentation for [Platform Name] using Docusaurus. The goal was to create a clean, scalable, and user-friendly docs-as-code workflow.
 
-## Live Site
-
-[View Site](#)
+![daily.dev homepage](/img/daily-dev-homepage.png)
 
 ## What I Improved
 
