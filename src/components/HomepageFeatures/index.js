@@ -4,8 +4,8 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
 	{
-		title: "My Recipe for Great Docs",
-		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+		title: "My Recipe for ",
+		Svg: require("@site/static/img/recipes.svg").default,
 		description: (
 			<>
 				A dash of clarity, sprinkled with real-life experiences and just a hint
@@ -16,7 +16,7 @@ const FeatureList = [
 	},
 	{
 		title: "What I Bring to the Table",
-		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+		Svg: require("@site/static/img/handshake-deal.svg").default,
 		description: (
 			<>
 				Got complex ideas? I'll break them down into simple, easy-to-understand
