@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 
 const FeatureList = [
 	{
-		title: "My Recipe for ",
+		title: "My Recipe for Great Docs ",
 		Svg: require("@site/static/img/recipes.svg").default,
 		description: (
 			<>
