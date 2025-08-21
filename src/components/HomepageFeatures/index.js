@@ -16,7 +16,7 @@ const FeatureList = [
 	},
 	{
 		title: "What I Bring to the Table",
-		Svg: require("@site/static/img/handshake-deal.svg").default,
+		Svg: require("@site/static/img/lightbulb-idea.svg").default,
 		description: (
 			<>
 				Got complex ideas? I'll break them down into simple, easy-to-understand
@@ -26,7 +26,7 @@ const FeatureList = [
 	},
 	{
 		title: "Why Choose Me?",
-		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+		Svg: require("@site/static/img/handshake-deal.svg").default,
 		description: (
 			<>
 				With my experience in modern docs tools and passion for accessible and
