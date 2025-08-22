@@ -32,7 +32,7 @@ Currently, the Firefox extension is not supported due to Mozilla review team req
   
 :::tip Using a Different Browser?  
 If you’re on **Safari, Brave, Opera, Vivaldi**, or another browser, we recommend setting up the  
-👉 [Progressive Web App (PWA)](/docs/documentation-tooling/pwa-installation-guide).  
+👉 [Progressive Web App (PWA)](/docs/documentation-tooling/guides/pwa-installation-guide.md).  
 :::
 ---
 
