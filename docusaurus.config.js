@@ -91,7 +91,7 @@ const config = {
 						type: "docSidebar",
 						sidebarId: "profileSidebar",
 						position: "left",
-						label: "Overview",
+						label: "About Me",
 					},
 					{
 						type: "docSidebar",
@@ -120,7 +120,7 @@ const config = {
 						title: "Docs",
 						items: [
 							{
-								label: "Tutorial",
+								label: "About Me",
 								to: "/docs/intro",
 							},
 						],

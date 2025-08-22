@@ -6,13 +6,14 @@ This project involved auditing and restructuring documentation for [daily.dev](h
 
 ## Improved Pages
 
-- **getting-started:** introduces users to daily.dev and guides them through the quick start process.
+- **getting-started:** introduces users to daily.dev
+- **quick-start:** guides them through the quick start process.
 - **Browser Extension Installation Guide:** Step-by-step instructions on how to install the daily.dev browser extension. Made step headings scannable and action-oriented.
 - **PWA Installation Guide:** Step-by-step instructions on how to install the daily.dev PWA. Made step headings scannable and action-oriented.
   
 :::success Improvements Included
 
-- **Simplified Navigation:** Updated the **Getting Started** page to include a **Quick Start** section for easier navigation.
+- **Simplified Navigation:** Placed the **Quick Start** section in its own page for easier navigation.
 - **Shorter Steps:** Simplified the **Browser Extension Installation** and **PWA Installation** guides by making it more action-oriented and scannable.
 - **Increase user buy-in:** Explained why daily.dev is a great place for developers to learn, share, and network.
 :::
