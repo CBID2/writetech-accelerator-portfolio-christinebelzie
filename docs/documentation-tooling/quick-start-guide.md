@@ -1,6 +1,7 @@
 ---
 title: Quick Start Guide 🚀
 sidebar_position: 1
+id: "quick-start-guide"
 ---
 
 ## Quick Start Guide 🚀
