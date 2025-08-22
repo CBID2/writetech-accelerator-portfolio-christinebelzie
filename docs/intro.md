@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
-title: "Welcome"
+title: "About Me"
+id: "intro"
 ---
 <!-- TODO: Change this text below once the program is over -->
 This portfolio contains all my project work and deliverables from the **WriteTech Accelerator Program**.
