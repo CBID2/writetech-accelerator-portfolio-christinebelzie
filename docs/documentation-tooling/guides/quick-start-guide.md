@@ -1,14 +1,12 @@
 ---
 title: Quick Start Guide 🚀
 sidebar_position: 1
-id: "quick-start-guide"
 ---
 
-## Quick Start Guide 🚀
 
-Here’s how to get started with daily.dev in just a few minutes:
+Welcome! Here’s how to get started with daily.dev in just a few minutes:
 
-### Step 1: Install the Browser Extension (Recommended) 🚀
+### Step 1: Install the Browser Extension (Recommended) 🌐
 
 Install the Chrome or Edge extension to replace your new tab with daily.dev.  
 This keeps you updated every time you open a new tab. You can pause it anytime.  
