@@ -1,12 +1,10 @@
 ---
 sidebar_position: 1
-title: "About Me"
+sidebar_label: "About Me"
+title: "About Me  👩🏽‍💻"
 id: "intro"
 ---
 <!-- TODO: Change this text below once the program is over -->
-This portfolio contains all my project work and deliverables from the **WriteTech Accelerator Program**.
-
-## 👩🏽‍💻 About Me
 
 I'm a technical writer with a background in software development and a passion for clear, user-focused documentation.
 
