@@ -57,7 +57,7 @@ const sidebars = {
 			label: "Getting Started",
 			link: {
 				type: "doc",
-				id: "api-documentation/getting-started", // this doc acts as landing page
+				id: "api-documentation/Getting-Started", // this doc acts as landing page
 			},
 			items: [
 				{
