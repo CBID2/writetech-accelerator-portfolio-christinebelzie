@@ -58,7 +58,7 @@ Here's the expected response if your request succeeds:
 }
 ```
 
-Congratulations! :partying_face:  This response confirms that your API key is valid and the API can be reached.
+Congratulations! 🥳  This response confirms that your API key is valid and the API can be reached.
 
 ## What's Next?
 
