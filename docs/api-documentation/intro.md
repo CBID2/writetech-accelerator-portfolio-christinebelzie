@@ -1,4 +1,4 @@
-# API Documentation Project 
+# API Documentation Project
 
 This project documents the [API Name] public REST API, including a Getting Started section and selected endpoints.
 
