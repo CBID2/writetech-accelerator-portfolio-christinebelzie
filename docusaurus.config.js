@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import { themes as prismThemes } from "prism-react-renderer";
+import { themes as prismThemes, themes } from "prism-react-renderer";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -74,7 +74,27 @@ const config = {
 			}),
 		],
 	],
-
+	// Plugins
+	plugins: [
+		[
+			"docusaurus-plugin-openapi-docs",
+			{
+				id: "api",
+				// The path to your OpenAPI spec file
+				docsPluginId: "classic",
+				// The path to your OpenAPI spec file
+				specPath: "docs/api-documentation/reference/chimoney-spec.yaml",
+				// The output directory for generated docs
+				output: "docs/api-documentation/reference/chimoney",
+				// Optional: sidebar options
+				sidebarOptions: {
+					categoryLabel: "API Reference",
+					sidebarId: "apiSidebar",
+				},
+			},
+		],
+	],
+	themes: [`docusaurus-theme-openapi-docs`], // Configuration for OpenAPI plugin
 	themeConfig:
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
@@ -105,6 +125,7 @@ const config = {
 						position: "left",
 						label: "API Documentation",
 					},
+
 					{ to: "/blog", label: "Blog", position: "left" },
 					{
 						href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",

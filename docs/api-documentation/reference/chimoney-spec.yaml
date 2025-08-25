@@ -1,0 +1,41 @@
+openapi: 3.0.3
+info:
+  title: Chimoney API (Beginner Endpoints)
+  version: 1.0.0
+  description: >
+    OpenAPI spec for three beginner-friendly Chimoney API endpoints:
+    - Info: Get supported mobile money codes
+    - Payouts: Mobile Money
+    - MultiCurrency Wallets: Create a new wallet
+servers:
+  - url: https://api-v2-sandbox.chimoney.io/v0.2
+    description: Chimoney Sandbox API
+  - url: https://api-v2.chimoney.io/v0.2
+    description: Chimoney Production API
+
+tags:
+  - name: Info
+    description: General info endpoints
+  - name: Payouts
+    description: Send payments via mobile money
+  - name: Wallets
+    description: Manage multi-currency wallets
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY
+
+security:
+  - ApiKeyAuth: []
+
+paths:
+  /info/mobile-money-codes:
+    get:
+      tags: [Info]
+      summary: Get list of supported mobile money codes
+      description: Returns supported mobile money providers and country codes.
+      responses:
+        "200":
