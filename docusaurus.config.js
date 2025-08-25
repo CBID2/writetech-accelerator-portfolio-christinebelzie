@@ -52,6 +52,8 @@ const config = {
 					// Remove this to remove the "edit this page" links.
 					editUrl:
 						"https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
+					// This tells docs pages to render API items correctly
+					docItemComponent: "@theme/ApiItem",
 				},
 				blog: {
 					showReadingTime: true,
