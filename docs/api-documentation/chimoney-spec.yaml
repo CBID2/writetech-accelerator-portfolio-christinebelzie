@@ -1,24 +1,30 @@
-openapi: 3.0.3
+openapi: 3.0.0
 info:
   title: Chimoney Demo API
   version: 1.0.0
-  description: Demo spec used to generate docs in Docusaurus
+  description: >
+    Demo OpenAPI spec for portfolio purposes. Includes 3 endpoints:
+    - Check Wallet Balance
+    - Send Money
+    - Get Transaction Status
+
 servers:
-  - url: https://api.example.com
+  - url: https://api.chimoney.io/v1
+
 tags:
   - name: Wallet
-    description: Balance and transfers
-  - name: Transfers
-    description: Send money and check status
+  - name: Payments
+  - name: Transactions
 
 paths:
   /wallet/balance:
     get:
       tags: [Wallet]
       summary: Check wallet balance
+      description: Returns the current balance of the wallet.
       responses:
         '200':
-          description: Current balance
+          description: Wallet balance retrieved
           content:
             application/json:
               schema:
@@ -26,71 +32,103 @@ paths:
                 properties:
                   balance:
                     type: number
-                    format: float
-  /v1/info/mobile-money-codes:
-    get:
-      summary: Get list of supported mobile money codes
-      tags:
-        - Getting Started
-      description: Returns the list of mobile money codes supported on Chimoney.
-      operationId: get-list-of-supported-mobile-money-codes
-      responses:
-        "200":
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    code:
-                      type: string
-                      example: Mpesa_UG
-          headers: {} 
+                    example: 125.75
+                  currency:
+                    type: string
+                    example: USD
 
-  /transfers/send:
+  /payments/send:
     post:
-      tags: [Transfers]
+      tags: [Payments]
       summary: Send money
+      description: Sends a payment to a recipient.
       requestBody:
         required: true
         content:
           application/json:
             schema:
               type: object
-              required: [to, amount, currency]
+              required: [amount, currency, recipient]
               properties:
-                to: { type: string, format: email }
-                amount: { type: number }
-                currency: { type: string, example: USD }
+                amount:
+                  type: number
+                  example: 50
+                currency:
+                  type: string
+                  example: USD
+                recipient:
+                  type: string
+                  description: Email, phone, or unique user identifier
+                  example: user@example.com
+                reference:
+                  type: string
+                  description: Client-supplied reference for tracking
+                  example: INV-2025-0001
+            examples:
+              emailRecipient:
+                summary: Send to email
+                value:
+                  amount: 50
+                  currency: USD
+                  recipient: user@example.com
+                  reference: INV-2025-0001
       responses:
-        '201':
-          description: Transfer created
+        '200':
+          description: Payment accepted
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  transferId: { type: string }
+                  transactionId:
+                    type: string
+                    example: tx_9a32bd1f
+                  status:
+                    type: string
+                    example: pending
+                  amount:
+                    type: number
+                    example: 50
+                  currency:
+                    type: string
+                    example: USD
 
-  /transfers/{id}/status:
+  /transactions/{id}:
     get:
-      tags: [Transfers]
-      summary: Get transfer status
+      tags: [Transactions]
+      summary: Get transaction status
+      description: Retrieves the status and details of a transaction by ID.
       parameters:
         - in: path
           name: id
           required: true
-          schema: { type: string }
+          schema:
+            type: string
+          description: The transaction ID returned from send money
+          example: tx_9a32bd1f
       responses:
         '200':
-          description: Status details
+          description: Transaction found
           content:
             application/json:
               schema:
                 type: object
                 properties:
+                  transactionId:
+                    type: string
+                    example: tx_9a32bd1f
                   status:
                     type: string
-                    enum: [pending, completed, failed]
+                    example: completed
+                  amount:
+                    type: number
+                    example: 50
+                  currency:
+                    type: string
+                    example: USD
+                  createdAt:
+                    type: string
+                    format: date-time
+                    example: 2025-08-19T12:00:00Z
+        '404':
+          description: Transaction not found
