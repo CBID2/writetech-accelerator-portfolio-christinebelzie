@@ -84,8 +84,6 @@ const config = {
 				id: "api",
 				// The path to your OpenAPI spec file
 				docsPluginId: "classic",
-				// The output directory for generated docs
-				output: "docs/api-documentation/reference/chimoney",
 				// Optional: sidebar options
 				sidebarOptions: {
 					categoryLabel: "API Reference",
