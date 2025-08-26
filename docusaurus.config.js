@@ -85,7 +85,8 @@ const config = {
 				docsPluginId: 'classic',
 				config: {
 					openapi: {
-						spec: 'docs/api-documentation/chimoney-spec.yaml',
+						specPath: 'docs/api-documentation/chimoney-spec.yaml',
+						outputDir: 'docs/api-documentation/chimoney',
 					},
 					chimoney: {
 						outputDir: 'docs/api-documentation/chimoney',
