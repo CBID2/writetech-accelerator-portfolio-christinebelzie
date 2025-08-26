@@ -12,10 +12,6 @@ const config = {
   tagline: "My projects and writings",
   favicon: "img/favicon.ico",
 
-  future: {
-    v4: true,
-  },
-
   url: "https://writetech-accelerator-portfolio-chr.vercel.app",
   baseUrl: "/",
 
