@@ -93,7 +93,7 @@ const config = {
 					categoryLabel: "API Reference",
 					sidebarId: "apiSidebar",
 				},
-				config: () => ({}),
+				config: {},
 			},
 		],
 	],
