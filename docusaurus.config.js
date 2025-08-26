@@ -39,8 +39,6 @@ const config = {
           sidebarPath: "./sidebars.js",
           editUrl:
             "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
-          // Disable server-side generation to fix build issues
-          ssg: false,
         },
         blog: {
           showReadingTime: true,
@@ -162,3 +160,4 @@ const config = {
 };
 
 export default config;
+
