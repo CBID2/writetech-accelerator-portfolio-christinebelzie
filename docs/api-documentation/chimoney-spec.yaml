@@ -27,6 +27,27 @@ paths:
                   balance:
                     type: number
                     format: float
+  /info/mobile-money-codes:
+    get:
+      summary: Get list of supported mobile money codes
+      tags:
+        - Getting Started
+      description: Returns the list of mobile money codes supported on Chimoney.
+      operationId: get-list-of-supported-mobile-money-codes
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    code:
+                      type: string
+                      example: Mpesa_UG
+          headers: {}
 
   /transfers/send:
     post:
