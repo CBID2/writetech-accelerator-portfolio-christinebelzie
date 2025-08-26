@@ -132,7 +132,7 @@ paths:
                     example: 2025-08-19T12:00:00Z
         '404':
           description: Transaction not found
-  /mobile-money/codes:
+  /info/mobile-money/codes:
     get:
       tags: [Mobile Money]
       summary: Get list of supported mobile money codes
@@ -156,3 +156,8 @@ paths:
                     currency:
                       type: string
                       example: KES
+          headers:
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
