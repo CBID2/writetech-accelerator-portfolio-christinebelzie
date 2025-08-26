@@ -132,32 +132,4 @@ paths:
                     example: 2025-08-19T12:00:00Z
         '404':
           description: Transaction not found
-  /info/mobile-money/codes:
-    get:
-      tags: [Mobile Money]
-      summary: Get list of supported mobile money codes
-      description: Returns a list of supported mobile money codes.
-      responses:
-        '200':
-          description: List of supported mobile money codes
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  type: object
-                  properties:
-                    code:
-                      type: string
-                      example: M-PESA
-                    country:
-                      type: string
-                      example: Kenya
-                    currency:
-                      type: string
-                      example: KES
-          headers:
-            Content-Type:
-              schema:
-                type: string
-                example: application/json
+  
