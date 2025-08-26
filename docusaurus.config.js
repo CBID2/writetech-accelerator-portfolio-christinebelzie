@@ -79,18 +79,20 @@ const config = {
 	// Plugins
 	plugins: [
 		[
-			"docusaurus-plugin-openapi-docs",
+			'docusaurus-plugin-openapi-docs',
 			{
-				id: "chimoney",
-				docsPluginId: "classic",
+				id: 'chimoney',
+				docsPluginId: 'classic',
 				config: {
-					openapi: "docs/api-documentation/chimoney-spec.yaml",
+					openapi: {
+						spec: 'docs/api-documentation/chimoney-spec.yaml',
+					},
 					chimoney: {
-						outputDir: "docs/api-documentation/chimoney",
+						outputDir: 'docs/api-documentation/chimoney',
 						sidebarOptions: {
-							groupPathsBy: "tag",
-						}
-					}
+							groupPathsBy: 'tag',
+						},
+					},
 				},
 			},
 		],
