@@ -1,0 +1,71 @@
+---
+id: send-money
+title: "Send money"
+description: "Send money"
+sidebar_label: "Send money"
+hide_title: true
+hide_table_of_contents: true
+api: eJylU7ly2zAQ/RXO1ogkp0QVx07hKp5IrjgqVsBKhEMcxmFbw+G/ZxbUZTmTJmxILhYP71gMkHGXQLawiujSlmKCtYBIL4VS/u71HuRQf00kDTLHQgKUd5lc5iUMoTcKs/Fu/py841pSHVnkr7wPBBL85plUBnEB1EL2IACtL45XVImRnNrz6SH6QDEbShXDXyClHI3bgYCtjxYzSCCLpofxBHXudcVuKPLSCfwvQPSONvRcelrew1gfJpqCd2li8HVxwy9NSUUTWCrIk1+NioSZNPyHLVeCD8gP+jPf8UjwI5klOd1Y72gPAizlzmuQEHyq6Jg7kDA/4qZ5Isd8E8VXDly2A5TYg4Qu55DkfI7BzA7GzJS3MK4FsIxf57n4cfRtSghKovjtcs85kcVlApPNAozbTsGaXN2/60wV0NyT9c3t4wMIYHaTwJvZYraAa9m1NQVSTUmkm+ybHTmKmKnRXqXGuObeq5KwxJL4UHbEYk3DoaVr5z6gn6zP9J7noUfjGKIaNRxMbU9hpeqn0zy/HfsuWxiGDSZ6iv04cvmlUNyDbNcCXjEa3LDudj0K6Ag1xZrDb2KP7qZJ+rJiBtzeF2byaapGcdxxqxSF/M/e9cVoPP5crkDA5nDBrde8J+IbX1J8AwkgwFcn6kzW2gA9ul3BHfdOmPz8AUVDdwY=
+sidebar_class_name: "post api-method"
+info_path: docs/api-documentation/chimoney/chimoney-demo-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send money"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/transfers/send"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send money
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","required":["to","amount","currency"],"properties":{"to":{"type":"string","format":"email"},"amount":{"type":"number"},"currency":{"type":"string","example":"USD"}}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Transfer created","content":{"application/json":{"schema":{"type":"object","properties":{"transferId":{"type":"string"}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
