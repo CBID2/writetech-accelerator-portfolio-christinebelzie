@@ -81,6 +81,7 @@ const config = {
 		[
 			"docusaurus-plugin-openapi-docs",
 			{
+				id: "chimoney",
 				docsPluginId: "classic",
 				config: {},
 			},
