@@ -83,7 +83,15 @@ const config = {
 			{
 				id: "chimoney",
 				docsPluginId: "classic",
-				config: {},
+				config: {
+					chimoney: {
+						specPath: "docs/api-documentation/chimoney.yaml",
+						outputDir: "docs/api-documentation/chimoney",
+						sidebarOptions: {
+							groupPathsBy: "tag",
+						}
+					}
+				},
 			},
 		],
 	],
