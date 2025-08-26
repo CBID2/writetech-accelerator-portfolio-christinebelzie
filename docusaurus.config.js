@@ -89,6 +89,7 @@ const config = {
 						outputDir: 'docs/api-documentation/chimoney',
 					},
 					chimoney: {
+						specPath: 'docs/api-documentation/chimoney-spec.yaml',
 						outputDir: 'docs/api-documentation/chimoney',
 						sidebarOptions: {
 							groupPathsBy: 'tag',
