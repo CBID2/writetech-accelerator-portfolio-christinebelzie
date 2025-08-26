@@ -81,8 +81,6 @@ const config = {
 		[
 			"docusaurus-plugin-openapi-docs",
 			{
-				id: "api",
-				// The path to your OpenAPI spec file
 				docsPluginId: "classic",
 				config: {},
 			},
