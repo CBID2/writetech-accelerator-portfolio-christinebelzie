@@ -54,11 +54,9 @@ const sidebars = {
 	},
 	{
 		type: "doc",
-		label: "Getting Started",
-		id: "api-documentation/Getting-Started",
+		label: "Getting Started", 
+		id: "api-documentation/getting-started",
 	},
-	// Comment out the API Reference section since the files were deleted
-	/*
 	{
 		type: "category",
 		label: "API Reference",
@@ -73,11 +71,7 @@ const sidebars = {
 					},
 					{
 						type: "doc",
-						id: "api-documentation/reference/chimoney/send-money",
-					},
-					{
-						type: "doc",
-						id: "api-documentation/reference/chimoney/chimoney-demo-api",
+						id: "api-documentation/reference/chimoney/send-money", 
 					},
 					{
 						type: "doc",
@@ -87,7 +81,6 @@ const sidebars = {
 			},
 		],
 	},
-	*/
 ],
 };
 
