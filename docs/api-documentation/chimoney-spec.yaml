@@ -27,7 +27,7 @@ paths:
                   balance:
                     type: number
                     format: float
-  /info/mobile-money-codes:
+  /v1/info/mobile-money-codes:
     get:
       summary: Get list of supported mobile money codes
       tags:
@@ -47,7 +47,7 @@ paths:
                     code:
                       type: string
                       example: Mpesa_UG
-          headers: {}
+          headers: {} 
 
   /transfers/send:
     post:
