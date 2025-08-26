@@ -1,41 +1,75 @@
 openapi: 3.0.3
 info:
-  title: Chimoney API (Beginner Endpoints)
+  title: Chimoney Demo API
   version: 1.0.0
-  description: >
-    OpenAPI spec for three beginner-friendly Chimoney API endpoints:
-    - Info: Get supported mobile money codes
-    - Payouts: Mobile Money
-    - MultiCurrency Wallets: Create a new wallet
+  description: Demo spec used to generate docs in Docusaurus
 servers:
-  - url: https://api-v2-sandbox.chimoney.io/v0.2
-    description: Chimoney Sandbox API
-  - url: https://api-v2.chimoney.io/v0.2
-    description: Chimoney Production API
-
+  - url: https://api.example.com
 tags:
-  - name: Info
-    description: General info endpoints
-  - name: Payouts
-    description: Send payments via mobile money
-  - name: Wallets
-    description: Manage multi-currency wallets
-
-components:
-  securitySchemes:
-    ApiKeyAuth:
-      type: apiKey
-      in: header
-      name: X-API-KEY
-
-security:
-  - ApiKeyAuth: []
+  - name: Wallet
+    description: Balance and transfers
+  - name: Transfers
+    description: Send money and check status
 
 paths:
-  /info/mobile-money-codes:
+  /wallet/balance:
     get:
-      tags: [Info]
-      summary: Get list of supported mobile money codes
-      description: Returns supported mobile money providers and country codes.
+      tags: [Wallet]
+      summary: Check wallet balance
       responses:
-        "200":
+        '200':
+          description: Current balance
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  balance:
+                    type: number
+                    format: float
+
+  /transfers/send:
+    post:
+      tags: [Transfers]
+      summary: Send money
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [to, amount, currency]
+              properties:
+                to: { type: string, format: email }
+                amount: { type: number }
+                currency: { type: string, example: USD }
+      responses:
+        '201':
+          description: Transfer created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  transferId: { type: string }
+
+  /transfers/{id}/status:
+    get:
+      tags: [Transfers]
+      summary: Get transfer status
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: Status details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    enum: [pending, completed, failed]
