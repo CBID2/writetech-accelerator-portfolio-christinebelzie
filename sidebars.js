@@ -47,40 +47,48 @@ const sidebars = {
 		},
 	],
 	apiSidebar: [
-		{
-			type: "doc",
-			label: "Introduction",
-			id: "api-documentation/intro",
-		},
-		{
-			type: "category",
-			label: "API Reference",
-			items: [
-				{
-					type: "category",
-					label: "Chimoney",
-					items: [
-						{
-							type: "doc",
-							id: "api-documentation/reference/chimoney/check-wallet-balance",
-						},
-						{
-							type: "doc",
-							id: "api-documentation/reference/chimoney/send-money",
-						},
-						{
-							type: "doc",
-							id: "api-documentation/reference/chimoney/chimoney-demo-api",
-						},
-						{
-							type: "doc",
-							id: "api-documentation/reference/chimoney/get-transfer-status",
-						},
-					],
-				},
-			],
-		},
-	],
+	{
+		type: "doc",
+		label: "Introduction",
+		id: "api-documentation/intro",
+	},
+	{
+		type: "doc",
+		label: "Getting Started",
+		id: "api-documentation/Getting-Started",
+	},
+	// Comment out the API Reference section since the files were deleted
+	/*
+	{
+		type: "category",
+		label: "API Reference",
+		items: [
+			{
+				type: "category",
+				label: "Chimoney",
+				items: [
+					{
+						type: "doc",
+						id: "api-documentation/reference/chimoney/check-wallet-balance",
+					},
+					{
+						type: "doc",
+						id: "api-documentation/reference/chimoney/send-money",
+					},
+					{
+						type: "doc",
+						id: "api-documentation/reference/chimoney/chimoney-demo-api",
+					},
+					{
+						type: "doc",
+						id: "api-documentation/reference/chimoney/get-transfer-status",
+					},
+				],
+			},
+		],
+	},
+	*/
+],
 };
 
 export default sidebars;
