@@ -72,7 +72,7 @@ const sidebars = {
 			label: "API Reference",
 			link: {
 				type: "doc",
-				id: "api-documentation//chimoney", // This doc acts as the landing page for the API Reference
+				id: "api-documentation/chimoney/chimoney-api-beginner-endpoints", // This doc acts as the landing page for the API Reference
 			},
 			items: [
 				{
