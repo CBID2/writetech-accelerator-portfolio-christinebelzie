@@ -84,8 +84,8 @@ const config = {
 				id: "chimoney",
 				docsPluginId: "classic",
 				config: {
+					openapi: "docs/api-documentation/chimoney-spec.yaml",
 					chimoney: {
-						specPath: "docs/api-documentation/chimoney-spec.yaml",
 						outputDir: "docs/api-documentation/chimoney",
 						sidebarOptions: {
 							groupPathsBy: "tag",
