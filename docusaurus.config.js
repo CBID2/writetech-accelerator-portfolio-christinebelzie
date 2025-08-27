@@ -105,6 +105,12 @@ const config = {
             position: "left",
             label: "API Documentation",
           },
+          {
+            type: "docSidebar",
+            sidebarId: "automationSidebar",
+            position: "left",
+            label: "Automation Workflows",
+          },
           { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
