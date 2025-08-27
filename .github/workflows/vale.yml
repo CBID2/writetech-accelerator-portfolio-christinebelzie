@@ -1,0 +1,45 @@
+name: Vale Linting and Link Checking
+
+# Trigger the workflow on push to main branch and pull requests
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  vale-lint:
+    runs-on: ubuntu-latest
+    name: Vale Linting
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Vale
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          # Install Vale and sync packages
+          files: "**/*.md"
+          version: "3.4.2"
+        env:
+          # Required for Vale action
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  link-check:
+    runs-on: ubuntu-latest
+    name: Broken Link Check
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check links in markdown files
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          # Check all .md files in the repository
+          use-quiet-mode: "yes"
+          use-verbose-mode: "yes"
+          config-file: ".markdown-link-check.json"
+          folder-path: "."
+          file-extension: ".md"
