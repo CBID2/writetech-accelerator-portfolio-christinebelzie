@@ -1,0 +1,41 @@
+name: Practice GitHub Actions
+
+# Trigger the workflow on push to main branch
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  practice-job:
+    runs-on: ubuntu-latest
+    name: Practice Job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print GitHub username and repo details
+        run: |
+          echo "GitHub Username: ${{ github.actor }}"
+          echo "Repository Name: ${{ github.repository }}"
+          echo "Repository Owner: ${{ github.repository_owner }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Event: ${{ github.event_name }}"
+
+      - name: Install Vale and print confirmation
+        run: |
+          # Download and install Vale
+          wget -O vale.tar.gz https://github.com/errata-ai/vale/releases/download/v3.4.2/vale_3.4.2_Linux_64-bit.tar.gz
+          tar -xzf vale.tar.gz
+          chmod +x vale
+          sudo mv vale /usr/local/bin/
+
+          # Check if Vale was installed successfully
+          if command -v vale &> /dev/null; then
+            echo "Vale was installed on my machine."
+            echo "Vale version: $(vale --version)"
+          else
+            echo "Vale installation failed."
+          fi
