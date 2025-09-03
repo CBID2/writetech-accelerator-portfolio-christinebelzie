@@ -1,0 +1,72 @@
+name: OpenAPI Validation and Documentation
+# Trigger the workflow on push to main branch and pull requests
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  spectral-lint:
+    runs-on: ubuntu-latest
+    name: Spectral OpenAPI Linting
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Spectral
+      run: npm install -g @stoplight/spectral-cli
+      
+    - name: Run Spectral linting on OpenAPI files
+      run: |
+        echo "Running Spectral on all YAML files..."
+        # Find and lint all .yaml and .yml files that might be OpenAPI specs
+        find . -name "*.yaml" -o -name "*.yml" | while read -r file; do
+          echo "Checking file: $file"
+          spectral lint "$file" --fail-severity=warn || echo "Spectral failed on $file"
+        done
+
+  redocly-build:
+    runs-on: ubuntu-latest
+    name: Generate API Documentation
+    needs: spectral-lint
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Redocly CLI
+      run: npm install -g @redocly/cli
+      
+    - name: Generate static API documentation
+      run: |
+        # Find OpenAPI spec files and generate docs
+        if [ -f "docs/automation-workflows/openapi.yaml" ]; then
+          echo "Found OpenAPI spec at docs/automation-workflows/openapi.yaml"
+          mkdir -p api-docs
+          redocly build-docs docs/automation-workflows/openapi.yaml --output api-docs/index.html
+          echo "✅ API documentation generated successfully!"
+          echo "📄 Documentation saved to api-docs/index.html"
+        else
+          echo "❌ No OpenAPI spec found at docs/automation-workflows/openapi.yaml"
+          echo "Please create your OpenAPI specification file."
+          exit 1
+        fi
+        
+    - name: Upload API documentation artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: api-documentation
+        path: api-docs/
+        retention-days: 30

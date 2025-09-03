@@ -1,0 +1,25 @@
+extends: ["@stoplight/spectral-openapi"]
+rules:
+  # Enable all default OpenAPI rules
+  info-contact: true
+  info-description: true
+  info-license: true
+  license-url: false
+  no-$ref-siblings: true
+  openapi-tags-alphabetical: false
+  openapi-tags: true
+  operation-description: true
+  operation-operationId-unique: true
+  operation-operationId: true
+  operation-parameters: true
+  operation-success-response: true
+  operation-tags: true
+  path-declarations-must-exist: true
+  path-keys-no-trailing-slash: true
+  path-not-include-query: true
+  path-params: true
+  tag-description: false
+  
+  # Custom rules for better API documentation
+  operation-summary: true
+  operation-tag-defined: true
