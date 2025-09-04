@@ -100,6 +100,24 @@ const sidebars = {
 			],
 		},
 	],
+	aiDocumentationSidebar: [
+		{
+      type: 'doc',
+      id: 'ai-documentation/intro', // This points to your intro.md file
+      label: 'Overview'
+    },
+	{
+		type: 'category',
+      label: 'Project Deliverables',
+      items: [
+        'ai-documentation/model_card',
+        'ai-documentation/ai_output', 
+        'ai-documentation/final_doc',
+        'ai-documentation/prompt_used',
+        'ai-documentation/reflection',
+	  ]
+	}
+	],
 };
 
 export default sidebars;
