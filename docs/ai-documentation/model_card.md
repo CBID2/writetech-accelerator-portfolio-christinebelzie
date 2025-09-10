@@ -29,7 +29,7 @@ This model card provides a clear overview of ChatGPT GPT-4 model. It is designed
 ## 3. How it Works
 
 - **Type:** Transformer-based large language model  
-- **Input:** Text (up to 32k tokens), images (for multimodal input)  
+- **Input:** Text (up to 32k tokens), images (for multi-input)  
 - **Output:** Text  
 - **Training method:** Predicts the next word in context and is fine-tuned using human feedback (RLHF)  
 - **Notes:** Exact model size, dataset details, and compute requirements are not publicly released  
@@ -38,7 +38,7 @@ This model card provides a clear overview of ChatGPT GPT-4 model. It is designed
 
 ## 4. Training & Testing
 
-- **Data sources:** Public text, licensed datasets, and text-image pairs for multimodal capabilities  
+- **Data sources:** Public text, licensed datasets, and text-image pairs for multi-input capabilities  
 - **Testing:** Evaluated using professional exams (bar exam, USMLE), MMLU benchmark, and red-teaming for safety  
 - **Results highlights:**  
   - Bar Exam: Top 10% performance  
@@ -73,7 +73,7 @@ This model card provides a clear overview of ChatGPT GPT-4 model. It is designed
 ## 7. Reliability & Privacy
 
 - **Fairness:** Audited for bias, but imperfections remain  
-- **Interpretability:** Outputs are not fully understandable  
+- **Clarity:** Outputs are not fully understandable  
 - **Robustness:** Reliable in trained domains; less stable in new or unusual tasks  
 - **Privacy:** Should not be used for sensitive or personal data  
 
