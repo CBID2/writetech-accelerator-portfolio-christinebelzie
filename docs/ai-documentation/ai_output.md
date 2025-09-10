@@ -77,10 +77,10 @@ A: GPT-4 significantly reduces hallucinations relative to previous models, scori
 **Q: What safety risks does GPT-4 pose?**
 A: GPT-4 still has similar limitations to earlier GPT models. Most importantly, it is not fully reliable and "hallucinates" facts and makes reasoning errors. It generally lacks knowledge of events after September 2021, does not learn from experience, and can make simple reasoning errors or be overly gullible.
 
-**Q: How does GPT-4's factual accuracy compare to previous models?** 
+**Q: How does GPT-4's factual accuracy compare to previous models?**
 A: GPT-4 significantly reduces hallucinations relative to previous models, scoring 40% higher than the latest GPT-3.5 on internal adversarial factuality evaluations across nine categories including learning, technology, writing, history, math, science, recommendation, code, and business.
 
-**Q: What safety risks does GPT-4 pose?** 
+**Q: What safety risks does GPT-4 pose?**
 A: GPT-4 poses similar risks as previous models, such as generating harmful advice, buggy code, or inaccurate information. However, its additional capabilities lead to new risk surfaces. OpenAI engaged over 50 experts from domains like AI alignment, cybersecurity, and biorisk to adversarially test the model.
 
 ## Safety & Alignment
