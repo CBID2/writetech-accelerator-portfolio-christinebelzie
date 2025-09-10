@@ -5,14 +5,14 @@ This project explores how AI tools can support documentation by generating draft
 
 ## 🔍 Model Chosen
 
-[Name and link to the AI model used]
+[ChatGPT GPT-4](https://openai.com/index/gpt-4-research/)
 
 ## 📄 Project Files
 
 | File            | Description |
 |-----------------|-------------|
 | model_card.md   | Manually written model card for the chosen AI model |
-| ai_output.txt   | Raw output from AI tools (summary, outline, or FAQ) |
+| [ai_output.md](/docs/ai-documentation/ai_output.md)     | Raw output from AI tools (summary, outline, or FAQ) |
 | final_doc.md    | Polished documentation based on AI-generated content |
 | prompt_used.txt | Prompt(s) submitted to the AI tool |
 | reflection.txt  | Personal reflections on improving the AI-generated content |
