@@ -11,11 +11,11 @@ This project explores how AI tools can support documentation by generating draft
 
 | File            | Description |
 |-----------------|-------------|
-| model_card.md   | Manually written model card for the chosen AI model |
+| [model_card.md](/docs/ai-documentation/model_card.md)   | Manually written model card for the chosen AI model |
 | [ai_output.md](/docs/ai-documentation/ai_output.md)     | Raw output from AI tools (summary, outline, or FAQ) |
-| final_doc.md    | Polished documentation based on AI-generated content |
-| prompt_used.txt | Prompt(s) submitted to the AI tool |
-| reflection.txt  | Personal reflections on improving the AI-generated content |
+| [final_doc.md](/docs/ai-documentation/final_doc.md)    | Polished documentation based on AI-generated content |
+| [prompt_used.md](/docs/ai-documentation/prompt_used.md) | Prompt(s) submitted to the AI tool |
+| [reflection.md](/docs/ai-documentation/reflection.md)  | Personal reflections on improving the AI-generated content |
 
 ## 🔧 What I Did
 
