@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+title: Revised AI Output
 ---
 
 # GPT-4 Frequently Asked Questions
