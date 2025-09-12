@@ -38,7 +38,7 @@ export default function Home() {
               <Link className={styles.secondaryBtn} to="/docs/api-documentation">
                 📚 API Documentation
               </Link>
-              <Link className={styles.secondaryBtn} to="/docs/ai-documentation">
+              <Link className={styles.secondaryBtn} to="/docs/ai-documentation/intro">
                 ⚡ AI Documentation
               </Link>
               <a 
