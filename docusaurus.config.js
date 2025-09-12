@@ -8,7 +8,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Christine’s Technical Writing Portfolio",
+  title: "Christine's Technical Writing Portfolio",
   tagline: "My projects and writings",
   favicon: "img/favicon.ico",
 
@@ -36,18 +36,7 @@ const config = {
           editUrl:
             "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          editUrl:
-            "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false, // ← Disable the blog plugin
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -81,7 +70,7 @@ const config = {
     ({
       image: "img/docusaurus-social-card.jpg",
       navbar: {
-        title: "Christine’s Portfolio",
+        title: "Christine's Portfolio",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
@@ -117,7 +106,8 @@ const config = {
             position: "left",
             label: "AI Documentation",
           },
-          { to: "/blog", label: "Blog", position: "left" },
+          // Remove the blog link from navbar
+          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
             label: "GitHub",
@@ -153,7 +143,8 @@ const config = {
           {
             title: "More",
             items: [
-              { label: "Blog", to: "/blog" },
+              // Remove blog link from footer
+              // { label: "Blog", to: "/blog" },
               { label: "GitHub", href: "https://github.com/CBID2" },
             ],
           },
@@ -168,4 +159,3 @@ const config = {
 };
 
 export default config;
-
