@@ -1,9 +1,92 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./index.module.css";
 import Link from "@docusaurus/Link";
-import { BookOpen, Lightbulb, Handshake, Linkedin, Twitter, Github, Rocket } from "lucide-react";
+import { BookOpen, Lightbulb, Handshake, Linkedin, Twitter, Github, Rocket, Send, MessageCircle } from "lucide-react";
+
+// Chatbot responses
+const chatbotResponses = {
+  greeting: [
+    "Hi! I'm Christine's portfolio assistant. I can help you learn about her technical writing work!",
+    "Hello! I'm here to help you explore Christine's technical writing portfolio. What would you like to know?",
+    "Welcome! I can answer questions about Christine's documentation projects and writing expertise."
+  ],
+  portfolio: [
+    "Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and docs tooling with Docusaurus. Which area interests you most?",
+    "Her portfolio showcases modern documentation practices including docs-as-code workflows, OpenAPI specifications, and automated quality assurance tools."
+  ],
+  experience: [
+    "Christine specializes in turning complex technical concepts into clear, user-friendly documentation. She has experience with API docs, developer tools, and documentation automation.",
+    "She's skilled in modern documentation tools like Docusaurus, Vale, Spectral, and GitHub Actions for automated workflows."
+  ],
+  projects: [
+    "Key projects include: 📚 Documentation tooling with Docusaurus, 🔧 API documentation for Chimoney, 🤖 AI-powered documentation, and ⚡ Automated quality workflows.",
+    "You can explore her API documentation project, automation workflows, or AI documentation work. Each shows different aspects of modern technical writing."
+  ],
+  contact: [
+    "You can connect with Christine on LinkedIn at linkedin.com/in/christinebelzie or check out her GitHub at github.com/CBID2",
+    "Find Christine on LinkedIn for professional inquiries or explore her code on GitHub!"
+  ],
+  default: [
+    "That's a great question! You can explore Christine's full portfolio using the buttons below, or ask me about her projects, experience, or how to get in touch.",
+    "I can help you learn about Christine's technical writing projects, her experience with documentation tools, or how to contact her. What interests you most?",
+    "Try asking about her portfolio, projects, experience, or contact information!"
+  ]
+};
+
+function getResponse(message) {
+  const lowerMessage = message.toLowerCase();
+  
+  if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+    return chatbotResponses.greeting[Math.floor(Math.random() * chatbotResponses.greeting.length)];
+  }
+  if (lowerMessage.includes('portfolio') || lowerMessage.includes('work') || lowerMessage.includes('show me')) {
+    return chatbotResponses.portfolio[Math.floor(Math.random() * chatbotResponses.portfolio.length)];
+  }
+  if (lowerMessage.includes('experience') || lowerMessage.includes('skills') || lowerMessage.includes('expertise')) {
+    return chatbotResponses.experience[Math.floor(Math.random() * chatbotResponses.experience.length)];
+  }
+  if (lowerMessage.includes('project') || lowerMessage.includes('documentation') || lowerMessage.includes('api')) {
+    return chatbotResponses.projects[Math.floor(Math.random() * chatbotResponses.projects.length)];
+  }
+  if (lowerMessage.includes('contact') || lowerMessage.includes('reach') || lowerMessage.includes('connect')) {
+    return chatbotResponses.contact[Math.floor(Math.random() * chatbotResponses.contact.length)];
+  }
+  
+  return chatbotResponses.default[Math.floor(Math.random() * chatbotResponses.default.length)];
+}
 
 export default function Home() {
+  const [messages, setMessages] = useState([
+    { type: 'bot', text: "Show me what you've got in technical writing." },
+    { type: 'user', text: "Hi! Tell me about your portfolio." },
+    { type: 'bot', text: "I'd love to show you! Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and modern docs tooling. Which area interests you most?" }
+  ]);
+  const [inputValue, setInputValue] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+
+  const handleSendMessage = async () => {
+    if (!inputValue.trim()) return;
+
+    const userMessage = inputValue.trim();
+    setMessages(prev => [...prev, { type: 'user', text: userMessage }]);
+    setInputValue('');
+    setIsTyping(true);
+
+    // Simulate typing delay
+    setTimeout(() => {
+      const botResponse = getResponse(userMessage);
+      setMessages(prev => [...prev, { type: 'bot', text: botResponse }]);
+      setIsTyping(false);
+    }, 1000 + Math.random() * 1000);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSendMessage();
+    }
+  };
+
   return (
     <main className={styles.main}>
       {/* Hero Section */}
@@ -15,9 +98,51 @@ export default function Home() {
             🚀
           </div>
           
-          {/* Speech Bubble */}
-          <div className={styles.speechBubble}>
-            "Show me what you've got in technical writing."
+          {/* Chatbot Interface */}
+          <div className={styles.chatbot}>
+            <div className={styles.chatHeader}>
+              <MessageCircle size={20} />
+              <span>Portfolio Assistant</span>
+            </div>
+            
+            <div className={styles.chatMessages}>
+              {messages.map((message, index) => (
+                <div key={index} className={`${styles.message} ${styles[message.type]}`}>
+                  <div className={styles.messageContent}>
+                    {message.text}
+                  </div>
+                </div>
+              ))}
+              {isTyping && (
+                <div className={`${styles.message} ${styles.bot}`}>
+                  <div className={styles.messageContent}>
+                    <div className={styles.typingIndicator}>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+            
+            <div className={styles.chatInput}>
+              <input
+                type="text"
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder="Ask me about Christine's work..."
+                className={styles.messageInput}
+              />
+              <button 
+                onClick={handleSendMessage}
+                className={styles.sendButton}
+                disabled={!inputValue.trim()}
+              >
+                <Send size={16} />
+              </button>
+            </div>
           </div>
           
           {/* Main Portfolio Card */}
