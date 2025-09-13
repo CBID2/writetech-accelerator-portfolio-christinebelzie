@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import Link from "@docusaurus/Link";
-import { BookOpen, Lightbulb, Handshake, Linkedin, Twitter, Github, PenTool, Rocket } from "lucide-react";
+import { BookOpen, Lightbulb, Handshake, Linkedin, Twitter, Github, Rocket } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,17 +9,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroContent}>
-          {/* Add floating animation */}
+          
+          {/* Floating Rocket Icon */}
           <div className={styles.heroIcon}>
-            <Rocket size={48} />
+            🚀
           </div>
           
-          {/* Add speech bubble */}
+          {/* Speech Bubble */}
           <div className={styles.speechBubble}>
             "Show me what you've got in technical writing."
           </div>
           
-          {/* Hero Card - like Mariam's personal intro */}
+          {/* Main Portfolio Card */}
           <div className={styles.heroCard}>
             <h1 className={styles.title}>Christine Belzie</h1>
             <p className={styles.subtitle}>
@@ -35,26 +36,18 @@ export default function Home() {
               <Link className={styles.primaryBtn} to="/docs/intro">
                 🚀 Explore Portfolio
               </Link>
-              <Link className={styles.secondaryBtn} to="/docs/api-documentation">
-                📚 API Documentation
-              </Link>
               <Link className={styles.secondaryBtn} to="/docs/ai-documentation/intro">
-                ⚡ AI Documentation
+                🤖 AI Documentation
               </Link>
-              <a 
-                className={styles.secondaryBtn} 
-                href="https://your-resume-link-here.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                📄 Resume
-              </a>
+              <Link className={styles.secondaryBtn} to="/docs/api-documentation">
+                ⚡ Technical Articles
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Value Props */}
+      {/* Value Props Section */}
       <section className={styles.values}>
         <div className={styles.valueCard}>
           <div className={styles.featureIcon} style={{backgroundColor: '#f0f9ff'}}>
