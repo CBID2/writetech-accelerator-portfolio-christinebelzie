@@ -1,209 +1,264 @@
-/* Add these styles to your existing index.module.css file */
+/* Clean Portfolio Design - Fixed Layout */
 
-/* Hero Icon Animation */
-.heroIcon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  animation: float 3s ease-in-out infinite;
-  color: rgba(255, 255, 255, 0.9);
-}
-.heroContent {
+.main {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   flex-direction: column;
-  /* Change this line */
-  align-items: flex-start;
-  gap: 2rem;
-  max-width: 900px;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Floating Rocket Icon */
+.heroIcon {
+  font-size: 4rem;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  margin-bottom: 1rem;
+}
+
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  0%, 100% { 
+    transform: translateY(0px) rotate(-5deg); 
+  }
+  50% { 
+    transform: translateY(-15px) rotate(5deg); 
+  }
 }
 
 /* Speech Bubble */
 .speechBubble {
-  background: #fff;
-  color: #007f73;
+  background: #1976d2;
+  color: white;
   padding: 1rem 1.5rem;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
   position: relative;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
-  max-width: 400px;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-  text-align: left;
-  align-self: flex-start;
+  box-shadow: 0 4px 15px rgba(25, 118, 210, 0.3);
+  animation: fadeInUp 0.6s ease-out;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .speechBubble::after {
   content: '';
   position: absolute;
-  bottom: -12px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-top: 12px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #1976d2;
 }
 
-/* Enhanced Hero Card */
+/* Main Portfolio Card */
 .heroCard {
   background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  color: #222;
-  border-radius: 2rem;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
   padding: 3rem 2.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  animation: slideUp 0.8s ease-out 0.3s both;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.heroCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Enhanced Buttons */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Typography */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0 0 1.5rem 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 0 2.5rem 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .primaryBtn {
-  background: #007f73;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.875rem 2rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.95rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 127, 115, 0.3);
-  border: 2px solid #007f73;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .primaryBtn:hover {
-  background: #005c53;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 127, 115, 0.4);
-  color: white;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
   text-decoration: none;
+  color: white;
 }
 
 .secondaryBtn {
-  background: transparent;
-  color: #007f73;
-  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  padding: 0.875rem 1.5rem;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
-  border: 2px solid #007f73;
+  border: 2px solid rgba(102, 126, 234, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  backdrop-filter: blur(10px);
 }
 
 .secondaryBtn:hover {
-  background: #007f73;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 127, 115, 0.3);
+  background: rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
   text-decoration: none;
+  color: #667eea;
 }
 
-/* Enhanced Value Cards Section */
+/* Value Props Section */
 .values {
+  background: white;
+  width: 100%;
+  padding: 5rem 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
   max-width: 1200px;
-  margin: 4rem auto;
-  padding: 0 2rem;
-  background: #f8fafc;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  margin: 2rem auto 0 auto;
+  border-radius: 0;
 }
 
 .valueCard {
-  background: white;
-  border-radius: 1.5rem;
-  padding: 2.5rem 2rem;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  height: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
-}
-
-.valueCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #00c896, #007f73);
-}
-
-.valueCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  padding: 2rem 1rem;
 }
 
 .valueCard h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #2d3748;
-  margin-top: 1.5rem;
+  color: #1a1a1a;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.3;
 }
 
 .valueCard p {
-  color: #4a5568;
+  color: #666;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  margin: 0;
 }
 
-/* Icon styling for value cards */
-.icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto;
-  padding: 12px;
+/* Feature Icons */
+.featureIcon {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #00c896, #007f73);
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
 }
 
-/* Main container */
-.main {
-  min-height: 100vh;
+.valueCard:hover .featureIcon {
+  transform: scale(1.1);
 }
 
-/* Footer Enhancement */
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+/* Footer */
 .footer {
   background: #2d3748;
   color: white;
   padding: 3rem 2rem 2rem;
+  text-align: center;
+  width: 100%;
   margin-top: 0;
 }
 
 .footerContent {
   max-width: 1200px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .socials {
@@ -225,7 +280,7 @@
 }
 
 .socials a:hover {
-  color: #00c896;
+  color: #667eea;
 }
 
 .copyright {
@@ -234,45 +289,75 @@
   margin: 0;
 }
 
-/* Mobile Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .speechBubble {
-    font-size: 1rem;
-    padding: 0.75rem 1.25rem;
-    max-width: 320px;
+  .main {
+    padding: 1rem;
   }
   
   .heroIcon {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
   }
   
   .heroCard {
-    padding: 2.5rem 2rem;
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
   }
   
   .buttons {
     flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
   
   .primaryBtn,
   .secondaryBtn {
     width: 100%;
-    max-width: 280px;
+    justify-content: center;
+    max-width: 300px;
+  }
+  
+  .speechBubble {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.25rem;
   }
   
   .values {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 3rem auto;
+    gap: 2rem;
     padding: 3rem 1rem;
   }
   
   .valueCard {
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 0.5rem;
   }
   
-  .socials {
-    gap: 1rem;
+  .valueCard h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroCard {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .tagline {
+    font-size: 0.95rem;
+  }
+  
+  .heroIcon {
+    font-size: 2.5rem;
   }
 }
