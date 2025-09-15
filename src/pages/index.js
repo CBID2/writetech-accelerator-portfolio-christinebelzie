@@ -39,6 +39,7 @@ const actionButtons = [
   { text: "🚀 Explore Portfolio", link: "/docs/intro" },
   { text: "🤖 AI Documentation", link: "/docs/ai-documentation/intro" },
   { text: "📚 API Documentation", link: "/docs/api-documentation" },
+  { text: "📝 Technical Articles", link: "/technical-articles" },
   { text: "📄 Resume", link: "/resume" }
 ];
 
