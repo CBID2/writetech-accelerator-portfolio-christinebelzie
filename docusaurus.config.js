@@ -123,7 +123,7 @@ const config = {
             items: [
               {
                 label: "About Me",
-                to: "/docs/intro",
+                to: "/docs/about-me",
               },
             ],
           },
