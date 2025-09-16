@@ -12,7 +12,7 @@ const chatbotResponses = {
     "Welcome! I can answer questions about Christine's documentation projects and writing expertise."
   ],
   portfolio: [
-    "Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and docs tooling with Docusaurus. Which area interests you most?",
+    "I'd love to show you! Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and modern docs tooling. Which area interests you most?",
     "Her portfolio showcases modern documentation practices including docs-as-code workflows, OpenAPI specifications, and automated quality assurance tools."
   ],
   experience: [
@@ -33,6 +33,15 @@ const chatbotResponses = {
     "Try asking about her portfolio, projects, experience, or contact information!"
   ]
 };
+
+// Action buttons that appear after bot responses
+const actionButtons = [
+  { text: "🚀 Explore Portfolio", link: "/docs/intro" },
+  { text: "🤖 AI Documentation", link: "/docs/ai-documentation/intro" },
+  { text: "📚 API Documentation", link: "/docs/api-documentation" },
+  { text: "📝 Technical Articles", link: "/technical-articles" },
+  { text: "📄 Resume", link: "/resume" }
+];
 
 function getResponse(message) {
   const lowerMessage = message.toLowerCase();
@@ -60,7 +69,7 @@ export default function Home() {
   const [messages, setMessages] = useState([
     { type: 'bot', text: "Show me what you've got in technical writing." },
     { type: 'user', text: "Hi! Tell me about your portfolio." },
-    { type: 'bot', text: "I'd love to show you! Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and modern docs tooling. Which area interests you most?" }
+    { type: 'bot', text: "I'd love to show you! Christine's portfolio includes API documentation, automation workflows, AI documentation projects, and modern docs tooling. Which area interests you most?", showButtons: true }
   ]);
   const [inputValue, setInputValue] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -76,7 +85,7 @@ export default function Home() {
     // Simulate typing delay
     setTimeout(() => {
       const botResponse = getResponse(userMessage);
-      setMessages(prev => [...prev, { type: 'bot', text: botResponse }]);
+      setMessages(prev => [...prev, { type: 'bot', text: botResponse, showButtons: true }]);
       setIsTyping(false);
     }, 1000 + Math.random() * 1000);
   };
@@ -98,76 +107,69 @@ export default function Home() {
             🚀
           </div>
           
-          {/* Chatbot Interface */}
-          <div className={styles.chatbot}>
-            <div className={styles.chatHeader}>
-              <MessageCircle size={20} />
-              <span>Portfolio Assistant</span>
-            </div>
-            
-            <div className={styles.chatMessages}>
-              {messages.map((message, index) => (
-                <div key={index} className={`${styles.message} ${styles[message.type]}`}>
-                  <div className={styles.messageContent}>
-                    {message.text}
-                  </div>
-                </div>
-              ))}
-              {isTyping && (
-                <div className={`${styles.message} ${styles.bot}`}>
-                  <div className={styles.messageContent}>
-                    <div className={styles.typingIndicator}>
-                      <span></span>
-                      <span></span>
-                      <span></span>
+          {/* Main Portfolio Card with Red Border */}
+          <div className={styles.heroCard}>
+            {/* Chatbot Interface */}
+            <div className={styles.chatbot}>
+              <div className={styles.chatHeader}>
+                <MessageCircle size={20} />
+                <span>Portfolio Assistant</span>
+              </div>
+              
+              <div className={styles.chatMessages}>
+                {messages.map((message, index) => (
+                  <div key={index} className={`${styles.message} ${styles[message.type]}`}>
+                    <div className={styles.messageContent}>
+                      {message.text}
                     </div>
                   </div>
-                </div>
-              )}
+                ))}
+                {messages.length > 0 && messages[messages.length - 1].type === 'bot' && messages[messages.length - 1].showButtons && (
+                  <div className={styles.actionButtonsContainer}>
+                    {actionButtons.map((button, btnIndex) => (
+                      <Link 
+                        key={btnIndex}
+                        to={button.link} 
+                        className={styles.actionButton}
+                      >
+                        {button.text}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+                {isTyping && (
+                  <div className={`${styles.message} ${styles.bot}`}>
+                    <div className={styles.messageContent}>
+                      <div className={styles.typingIndicator}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              <div className={styles.chatInput}>
+                <input
+                  type="text"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                  onKeyPress={handleKeyPress}
+                  placeholder="Ask me about Christine's work..."
+                  className={styles.messageInput}
+                />
+                <button 
+                  onClick={handleSendMessage}
+                  className={styles.sendButton}
+                  disabled={!inputValue.trim()}
+                >
+                  <Send size={16} />
+                </button>
+              </div>
             </div>
-            
-            <div className={styles.chatInput}>
-              <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                onKeyPress={handleKeyPress}
-                placeholder="Ask me about Christine's work..."
-                className={styles.messageInput}
-              />
-              <button 
-                onClick={handleSendMessage}
-                className={styles.sendButton}
-                disabled={!inputValue.trim()}
-              >
-                <Send size={16} />
-              </button>
-            </div>
-          </div>
-          
-          {/* Main Portfolio Card */}
-          <div className={styles.heroCard}>
-            <h1 className={styles.title}>Christine Belzie</h1>
-            <p className={styles.subtitle}>
-              Technical Writer & Documentation Specialist
-            </p>
-            <p className={styles.tagline}>
-              Docs shouldn't feel like a puzzle with missing pieces. I turn 
-              complexity into clarity, so your users leave with 'aha!' 💡 moments, 
-              not 'ugh' 😤 headaches.
-            </p>
-            
-            <div className={styles.buttons}>
-              <Link className={styles.primaryBtn} to="/docs/intro">
-                🚀 Explore Portfolio
-              </Link>
-              <Link className={styles.secondaryBtn} to="/docs/ai-documentation/intro">
-                🤖 AI Documentation
-              </Link>
-              <Link className={styles.secondaryBtn} to="/docs/api-documentation">
-                ⚡ Technical Articles
-              </Link>
-            </div>
+
+
           </div>
         </div>
       </section>
