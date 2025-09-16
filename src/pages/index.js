@@ -25,7 +25,7 @@ export default function Home() {
             </Link>
             <Link 
               className="button button--secondary button--lg" 
-              to="/docs/about"
+              to="/docs/about me"
             >
               Learn More →
             </Link>
