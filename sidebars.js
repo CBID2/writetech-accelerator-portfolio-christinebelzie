@@ -22,7 +22,7 @@ const sidebars = {
 		{
 			type: "doc",
 			label: "Overview",
-			id: "intro",
+			id: "about me",
 		},
 	],
 	toolingSidebar: [
