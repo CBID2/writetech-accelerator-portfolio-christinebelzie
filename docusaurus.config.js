@@ -77,37 +77,25 @@ const config = {
         },
         items: [
           {
-            type: "docSidebar",
-            sidebarId: "profileSidebar",
-            position: "left",
-            label: "About Me",
+            to: '/', // Home page
+            position: 'left',
+            label: 'Home',
           },
           {
-            type: "docSidebar",
-            sidebarId: "toolingSidebar",
-            position: "left",
-            label: "Docs Tooling",
+            to: '/projects', // Portfolio-focused projects showcase
+            position: 'left',
+            label: 'Projects',
           },
           {
-            type: "docSidebar",
-            sidebarId: "apiSidebar",
-            position: "left",
-            label: "API Documentation",
+            to: '/resume', // Resume page
+            position: 'left',
+            label: 'Resume',
           },
           {
-            type: "docSidebar",
-            sidebarId: "automationSidebar",
-            position: "left",
-            label: "Automation Workflows",
+            to: '/technical-articles', // Technical articles page
+            position: 'left',
+            label: 'Technical Articles',
           },
-          {
-            type: "docSidebar",
-            sidebarId: "aiDocumentationSidebar",
-            position: "left",
-            label: "AI Documentation",
-          },
-          // Remove the blog link from navbar
-          // { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
             label: "GitHub",
@@ -119,11 +107,36 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Portfolio", // NEW: Portfolio section in footer
             items: [
               {
+                label: "Projects",
+                to: "/projects",
+              },
+              {
                 label: "About Me",
-                to: "/docs/about me",
+                to: "/docs/about-me",
+              },
+            ],
+          },
+          {
+            title: "Documentation", // NEW: Documentation section
+            items: [
+              {
+                label: "API Documentation",
+                to: "/docs/api-documentation/",
+              },
+              {
+                label: "AI Documentation", 
+                to: "/docs/ai-documentation/",
+              },
+              {
+                label: "Documentation Tooling",
+                to: "/docs/documentation-tooling/",
+              },
+              {
+                label: "Automation Workflows",
+                to: "/docs/automation-workflows/",
               },
             ],
           },
