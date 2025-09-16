@@ -35,11 +35,15 @@ I believe great documentation isn't just about explaining how something works—
 
 **📚 Documentation Tooling Project**  
 [View Project →](/docs/documentation-tooling/intro)  
-Implemented modern documentation infrastructure to streamline content creation and maintenance workflows.
+Audited and restructured an open source project's documentation using Docusaurus to create a clean, scalable, and user-friendly docs-as-code workflow.
 
 **🔧 API Documentation**  
 [View Project →](/docs/api-documentation/intro)  
 Created comprehensive API documentation with interactive examples and clear integration guides.
+
+**📚 Automation Workflow**  
+[View Project →](/docs/automation-workflows/intro)  
+Implemented automated quality assurance tools including Vale prose linting, Spectral API validation, and GitHub Actions workflows to enforce documentation standards and streamline content review processes.
 
 <!-- Coming Soon -->
 <!-- **⚙️ DevOps Documentation**  
@@ -58,6 +62,5 @@ When I'm not crafting documentation, you'll find me exploring new technologies, 
 
 I'm always interested in discussing technical writing, documentation strategy, or potential collaborations. Feel free to reach out!
 
-- 💼 [LinkedIn](#) <!-- Add your LinkedIn URL -->
-- 📧 [Email](#) <!-- Add your email -->
-- 🐙 [GitHub](https://github.com/CBID2) <!-- Updated with your GitHub -->
+- 💼 [LinkedIn](https://www.linkedin.com/in/christinebelzie/)
+- 🐙 [GitHub](https://github.com/CBID2) 
