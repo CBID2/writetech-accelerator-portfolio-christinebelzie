@@ -82,6 +82,11 @@ const config = {
             label: 'Home',
           },
           {
+            to: '/docs/about me',
+            position: 'left',
+            label: 'About Me',
+          },
+          {
             to: '/projects', // Portfolio-focused projects showcase
             position: 'left',
             label: 'Projects',

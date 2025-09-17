@@ -13,7 +13,7 @@ const ProjectList = [
     preview: '/img/api-docs-preview.png', // You can add this image later
     tags: ['API Documentation', 'OpenAPI', 'Developer Experience'],
     demoLink: '/docs/api-documentation/',
-    githubLink: '#', // Add your GitHub link
+
     featured: true,
   },
   {
@@ -48,7 +48,7 @@ const ProjectList = [
   },
 ];
 
-function ProjectCard({title, slug, description, preview, tags, demoLink, githubLink, featured}) {
+function ProjectCard({title, slug, description, preview, tags, demoLink, featured}) {
   return (
     <div className={clsx('col col--6', styles.projectCard, featured && styles.featured)}>
       <div className={styles.card}>
