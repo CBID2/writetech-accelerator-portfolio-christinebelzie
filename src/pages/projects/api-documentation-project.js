@@ -5,60 +5,53 @@ import Layout from '@theme/Layout';
 import styles from './project-detail.module.css';
 
 const projectData = {
-  title: 'AI Documentation Project',
-  subtitle: 'Comprehensive documentation for AI/ML models and systems',
-  overview: 'A comprehensive documentation project focused on AI and machine learning systems, including model cards, prompt engineering guides, and best practices for documenting AI systems. This project explores the unique challenges of documenting AI models and provides practical frameworks for technical writers in the AI space.',
-  challenge: 'AI and ML systems present unique documentation challenges - how do you document systems that learn and change? How do you explain complex models to different audiences? This project tackled creating clear, actionable documentation for AI systems.',
-  solution: 'Developed a comprehensive documentation framework including model cards, prompt engineering guides, and reflection pieces on AI documentation best practices. Created templates and guidelines that can be adapted for various AI/ML projects.',
+  title: 'Chimoney API Documentation',
+  subtitle: 'Complete API documentation suite for payment platform',
+  overview: 'Comprehensive API documentation for Chimoney, a digital payment platform that enables seamless money transfers and wallet management. This project involved creating developer-friendly documentation from OpenAPI specifications, including interactive examples and clear getting-started guides.',
+  challenge: 'The challenge was to transform complex payment API endpoints into accessible, developer-friendly documentation that would reduce integration time and support developer success.',
+  solution: 'Created a complete documentation suite including OpenAPI specifications, interactive API reference, getting started guides, and practical code examples. Implemented clear navigation structure and comprehensive error handling documentation.',
   technologies: [
-    'AI/ML Documentation',
-    'Model Cards',
-    'Prompt Engineering',
-    'Technical Writing',
-    'Documentation Strategy',
-    'Markdown'
+    'OpenAPI 3.0',
+    'Docusaurus',
+    'Markdown',
+    'YAML',
+    'JSON Schema'
   ],
   features: [
-    'Complete model card documentation',
-    'Prompt engineering best practices',
-    'AI system architecture documentation',
-    'Performance metrics and evaluation',
-    'Ethical considerations and limitations',
-    'User guidance and implementation notes'
+    'Interactive API reference with live examples',
+    'Comprehensive getting started guide',
+    'Detailed endpoint documentation',
+    'Error handling and status codes',
+    'Authentication and security guides',
+    'SDK integration examples'
   ],
   deliverables: [
     {
-      title: 'Model Card Documentation',
-      description: 'Comprehensive model card with performance metrics',
-      link: '/docs/ai-documentation/model_card',
-      type: 'Documentation'
+      title: 'OpenAPI Specification',
+      description: 'Complete OpenAPI 3.0 specification file',
+      link: '/docs/api-documentation/chimoney-spec.yaml',
+      type: 'YAML'
     },
     {
-      title: 'Final Documentation',
-      description: 'Complete AI system documentation',
-      link: '/docs/ai-documentation/final_doc',
+      title: 'Getting Started Guide',
+      description: 'Step-by-step developer onboarding',
+      link: '/docs/api-documentation/getting-started',
       type: 'Guide'
     },
     {
-      title: 'Prompt Engineering Guide',
-      description: 'Detailed prompt engineering methodology',
-      link: '/docs/ai-documentation/prompt_used',
-      type: 'Guide'
-    },
-    {
-      title: 'Reflection & Best Practices',
-      description: 'Insights on AI documentation challenges',
-      link: '/docs/ai-documentation/reflection',
-      type: 'Analysis'
+      title: 'API Reference',
+      description: 'Complete endpoint documentation',
+      link: '/docs/api-documentation/reference/chimoney/',
+      type: 'Reference'
     }
   ],
   metrics: {
-    sections: '6+',
-    pages: '5+',
-    frameworks: '2+'
+    endpoints: '15+',
+    pages: '10+',
+    examples: '25+'
   },
   github: '#', // Add your GitHub link
-  liveDemo: '/docs/ai-documentation/'
+  liveDemo: '/docs/api-documentation/'
 };
 
 function ProjectHeader({title, subtitle, technologies}) {
@@ -137,7 +130,7 @@ function KeyFeatures({features}) {
           {features.map((feature, idx) => (
             <div key={idx} className="col col--6">
               <div className={styles.featureItem}>
-                <span className={styles.featureIcon}>🤖</span>
+                <span className={styles.featureIcon}>✅</span>
                 <span>{feature}</span>
               </div>
             </div>
@@ -159,7 +152,7 @@ function ProjectDeliverables({deliverables}) {
         </div>
         <div className="row">
           {deliverables.map((deliverable, idx) => (
-            <div key={idx} className="col col--6">
+            <div key={idx} className="col col--4">
               <div className={styles.deliverableCard}>
                 <div className={styles.deliverableType}>{deliverable.type}</div>
                 <h3>{deliverable.title}</h3>
@@ -184,26 +177,26 @@ function ProjectMetrics({metrics}) {
       <div className="container">
         <div className="row">
           <div className="col col--12">
-            <h2>Project Impact</h2>
+            <h2>Project Metrics</h2>
           </div>
         </div>
         <div className="row">
           <div className="col col--4">
             <div className={styles.metricCard}>
-              <div className={styles.metricNumber}>{metrics.sections}</div>
-              <div className={styles.metricLabel}>Documentation Sections</div>
+              <div className={styles.metricNumber}>{metrics.endpoints}</div>
+              <div className={styles.metricLabel}>API Endpoints Documented</div>
             </div>
           </div>
           <div className="col col--4">
             <div className={styles.metricCard}>
               <div className={styles.metricNumber}>{metrics.pages}</div>
-              <div className={styles.metricLabel}>Comprehensive Pages</div>
+              <div className={styles.metricLabel}>Documentation Pages</div>
             </div>
           </div>
           <div className="col col--4">
             <div className={styles.metricCard}>
-              <div className={styles.metricNumber}>{metrics.frameworks}</div>
-              <div className={styles.metricLabel}>Documentation Frameworks</div>
+              <div className={styles.metricNumber}>{metrics.examples}</div>
+              <div className={styles.metricLabel}>Code Examples</div>
             </div>
           </div>
         </div>
@@ -212,53 +205,7 @@ function ProjectMetrics({metrics}) {
   );
 }
 
-function SpecialInsights() {
-  const insights = [
-    {
-      title: 'Model Cards as Documentation',
-      description: 'Explored how model cards serve as both technical documentation and ethical accountability tools.',
-      icon: '📊'
-    },
-    {
-      title: 'Prompt Engineering Documentation',
-      description: 'Developed frameworks for documenting prompt engineering processes and methodologies.',
-      icon: '🎯'
-    },
-    {
-      title: 'AI System Limitations',
-      description: 'Created clear documentation patterns for communicating AI system limitations and boundaries.',
-      icon: '⚠️'
-    }
-  ];
-
-  return (
-    <section className={styles.insights}>
-      <div className="container">
-        <div className="row">
-          <div className="col col--12">
-            <h2>Key Insights</h2>
-            <p className={styles.insightsSubtitle}>
-              Special considerations and learnings from documenting AI systems
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          {insights.map((insight, idx) => (
-            <div key={idx} className="col col--4">
-              <div className={styles.insightCard}>
-                <div className={styles.insightIcon}>{insight.icon}</div>
-                <h3>{insight.title}</h3>
-                <p>{insight.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export default function AiDocumentationProject() {
+export default function ApiDocumentationProject() {
   return (
     <Layout
       title={projectData.title}
@@ -267,7 +214,6 @@ export default function AiDocumentationProject() {
       <main>
         <ProjectOverview {...projectData} />
         <KeyFeatures features={projectData.features} />
-        <SpecialInsights />
         <ProjectDeliverables deliverables={projectData.deliverables} />
         <ProjectMetrics metrics={projectData.metrics} />
         
@@ -277,15 +223,15 @@ export default function AiDocumentationProject() {
               <div className="col col--6">
                 <Link
                   className="button button--secondary button--outline"
-                  to="/projects/api-documentation">
-                  ← Previous: API Documentation
+                  to="/projects">
+                  ← Back to Projects
                 </Link>
               </div>
               <div className="col col--6" style={{textAlign: 'right'}}>
                 <Link
                   className="button button--primary"
-                  to="/projects">
-                  Back to Projects →
+                  to="/projects/ai-documentation">
+                  Next Project: AI Documentation →
                 </Link>
               </div>
             </div>
