@@ -115,7 +115,7 @@ const config = {
               },
               {
                 label: "About Me",
-                to: "/docs/about-me",
+                to: "/docs/about me", // Fixed: matches your actual file path
               },
             ],
           },
@@ -124,19 +124,19 @@ const config = {
             items: [
               {
                 label: "API Documentation",
-                to: "/docs/api-documentation/",
+                to: "/docs/api-documentation/intro",
               },
               {
                 label: "AI Documentation", 
-                to: "/docs/ai-documentation/",
+                to: "/docs/ai-documentation/intro",
               },
               {
                 label: "Documentation Tooling",
-                to: "/docs/documentation-tooling/",
+                to: "/docs/documentation-tooling/intro",
               },
               {
                 label: "Automation Workflows",
-                to: "/docs/automation-workflows/",
+                to: "/docs/automation-workflows/intro",
               },
             ],
           },
