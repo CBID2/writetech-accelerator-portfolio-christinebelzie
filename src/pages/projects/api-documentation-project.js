@@ -50,8 +50,8 @@ const projectData = {
     pages: '10+',
     examples: '25+'
   },
-  github: '#', // Add your GitHub link
-  liveDemo: '/docs/api-documentation/'
+  github: 'https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie/blob/main/docs/api-documentation/getting-started.md', // Add your GitHub link
+  liveDemo: '/docs/api-documentation/getting-started'
 };
 
 function ProjectHeader({title, subtitle, technologies}) {

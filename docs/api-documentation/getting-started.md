@@ -1,6 +1,7 @@
 ---
 id: getting-started
 title: Getting Started
+slug: /docs/api-documentation/getting-started
 ---
 
 Welcome! This guide will teach you how to use Chimoney's API to authenticate your requests and make your first API call.
