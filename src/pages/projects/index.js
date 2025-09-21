@@ -63,6 +63,7 @@ function ProjectCard({title, slug, description, preview, tags, demoLink, feature
             )}
           </div>
           {featured && <div className={styles.featuredBadge}>Featured</div>}
+          }
         </div>
         <div className={styles.cardBody}>
           <h3 className={styles.cardTitle}>{title}</h3>
