@@ -19,7 +19,7 @@ export default function Home() {
           <div className={styles.buttons}>
             <Link 
               className="button button--primary button--lg" 
-              to="/docs/documentation-tooling/intro"
+              to="/projects"
             >
               View My Work →
             </Link>
