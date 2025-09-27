@@ -10,7 +10,7 @@ export default function Home() {
       <header className={styles.heroBanner}>
         <div className="container text--center">
           <img 
-            src="/img/logo.svg" 
+            src="/img/logo.png" 
             alt="Site Logo" 
             className={styles.heroLogo} 
           />
