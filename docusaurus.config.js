@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "Christine's Technical Writing Portfolio",
   tagline: "My projects and writings",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.png",
 
   url: "https://writetech-accelerator-portfolio-chr.vercel.app",
   baseUrl: "/",
