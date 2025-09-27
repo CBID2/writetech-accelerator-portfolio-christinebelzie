@@ -87,7 +87,7 @@ const config = {
             label: 'About Me',
           },
           {
-            to: '/projects', // Portfolio-focused projects showcase
+            to: '/projects/projects', // Portfolio-focused projects showcase
             position: 'left',
             label: 'Projects',
           },
@@ -112,63 +112,31 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Portfolio", // NEW: Portfolio section in footer
+            title: "Portfolio",
             items: [
-              {
-                label: "Projects",
-                to: "/projects",
-              },
-              {
-                label: "About Me",
-                to: "/docs/about me", // Fixed: matches your actual file path
-              },
+              { label: "Projects", to: "/projects" },
+              { label: "Resume", to: "/resume" }
             ],
           },
           {
-            title: "Documentation", // NEW: Documentation section
-            items: [
-              {
-                label: "API Documentation",
-                to: "/docs/api-documentation/intro",
-              },
-              {
-                label: "AI Documentation", 
-                to: "/docs/ai-documentation/intro",
-              },
-              {
-                label: "Documentation Tooling",
-                to: "/docs/documentation-tooling/intro",
-              },
-              {
-                label: "Automation Workflows",
-                to: "/docs/automation-workflows/intro",
-              },
+            title: "Technical Articles",
+      items: [
+        { label: "Articles Overview", to: "/technical-articles" },
+        // You can add specific article links here later, like:
+        // { label: "Accessibility Testing", to: "/technical-articles/accessibility" },
             ],
           },
           {
             title: "Contact",
             items: [
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/in/christinebelzie/",
-              },
-              {
-                label: "X(Twitter)",
-                href: "https://x.com/CodesChrissy",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              // Remove blog link from footer
-              // { label: "Blog", to: "/blog" },
-              { label: "GitHub", href: "https://github.com/CBID2" },
+              { label: "LinkedIn", href: "https://www.linkedin.com/in/christinebelzie/" },
+              { label: "GitHub", href: "https://github.com/CBID2" }
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Built by Christine Belzie– WriteTech Accelerator Programme 2025.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Christine Belzie — Built with Docusaurus.`,
       },
+      
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
