@@ -14,15 +14,17 @@ A curated selection of documentation projects I’ve worked on, including API do
 - Developer-friendly API docs built from OpenAPI specifications  
 - Includes **Getting Started**, **Interactive Reference**, and **Error Handling** docs  
 - **Tech:** OpenAPI, Docusaurus, Markdown  
-👉 [View Getting Started](/docs/api-documentation/getting-started)
-
+👉 [View Getting Started](/docs/api-documentation/getting-started.md)
+💼 [View Check Wallet Balance](/docs/api-documentation/reference/chimoney/check-wallet-balance.md)
+📤 [View Get Transfer Status](/docs/api-documentation/reference/chimoney/get-transfer-status.md)
+💰 [View Send Money](/docs/api-documentation/reference/chimoney/send-money.md)
 ---
 
 ### AI Documentation Project
 - Comprehensive docs for AI/ML systems  
 - Includes **Model Cards**, **Prompt Engineering Guides**, and best practices  
 - **Tech:** AI/ML Docs, Prompt Engineering  
-👉 [View Model Card](/docs/ai-documentation/model_card)
+👉 [View Model Card](/docs/ai-documentation/model_card.md)
 
 ---
 
@@ -34,8 +36,3 @@ A curated selection of documentation projects I’ve worked on, including API do
 - **Documentation Tooling** → [Docs](/docs/documentation-tooling/intro)  
   User guides for developer tools (browser extensions, PWAs) with quick-start guides.  
 
----
-
-## Quick Stats
-
-📄 **4+ Projects** · ⚡ **15+ API Endpoints** · 🛠️ **Multiple Doc Tools**

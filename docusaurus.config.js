@@ -87,7 +87,7 @@ const config = {
             label: 'About Me',
           },
           {
-            to: '/projects', // Portfolio-focused projects showcase
+            to: '/projects/projects', // Portfolio-focused projects showcase
             position: 'left',
             label: 'Projects',
           },
