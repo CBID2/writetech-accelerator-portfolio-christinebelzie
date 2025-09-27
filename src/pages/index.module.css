@@ -12,11 +12,12 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #ff6666;
 }
 
 .hero__subtitle {
   font-size: 1.25rem;
-  color: #555;
+  color: #0000;
 }
 
 .buttons {
