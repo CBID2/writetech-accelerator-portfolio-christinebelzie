@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      
+      - name: List repo files
+        run: find . -type f | sort
 
       - name: Check links in markdown files
         uses: gaurav-nelson/github-action-markdown-link-check@v1
