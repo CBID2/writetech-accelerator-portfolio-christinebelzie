@@ -31,7 +31,7 @@ I believe great documentation isn't just about explaining how something works—
 - Experience with developer tools and workflows
 - Ability to review and document code-level implementations
 
-## Featured Projects
+<!-- ## Featured Projects
 
 **📚 Documentation Tooling Project**  
 [View Project →](/docs/documentation-tooling/intro)  
@@ -43,7 +43,7 @@ Created comprehensive API documentation with interactive examples and clear inte
 
 **📚 Automation Workflow**  
 [View Project →](/docs/automation-workflows/intro)  
-Implemented automated quality assurance tools including Vale prose linting, Spectral API validation, and GitHub Actions workflows to enforce documentation standards and streamline content review processes.
+Implemented automated quality assurance tools including Vale prose linting, Spectral API validation, and GitHub Actions workflows to enforce documentation standards and streamline content review processes. —->
 
 <!-- Coming Soon -->
 <!-- **⚙️ DevOps Documentation**  
