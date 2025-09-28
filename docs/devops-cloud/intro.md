@@ -20,8 +20,9 @@ Deploying a Static Website with Vercel (using Docusaurus)
 | summary.md         | Summary and next steps |
 | reflection.md      | What I learned from this project |
 
-## 📹 Optional Loom Video
-[Insert Loom video link if recorded]
+<!-- Will implement in the future -->
+<!-- ## 📹 Optional Loom Video
+[Insert Loom video link if recorded] -->
 
 ## 🌱 What I Learned
 - [Placeholder for insights gained about simplifying DevOps concepts.]  
