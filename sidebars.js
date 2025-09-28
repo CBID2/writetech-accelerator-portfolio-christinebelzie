@@ -123,12 +123,12 @@ const sidebars = {
 	type: 'category',
       label: 'Deploy a Docusauraus Site on Vercel',
       items: [
-        'devops-cloud-documentation/overview',
-        'devops-cloud-documentation/setup',
-        'devops-cloud-documentation/step_by_step',
-        'devops-cloud-documentation/troubleshooting',
-        'devops-cloud-documentation/summary',
-        'devops-cloud-documentation/reflection',
+        'devops-cloud/overview',
+        'devops-cloud/setup',
+        'devops-cloud/step_by_step',
+        'devops-cloud/troubleshooting',
+        'devops-cloud/summary',
+        'devops-cloud/reflection',
 	  ]
 }
 	],
