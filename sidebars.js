@@ -113,6 +113,26 @@ const sidebars = {
 	  ]
 	}
 	],
+	devopsCloudSidebar: [
+		{
+	type: 'doc',
+	id: 'devops-cloud/intro',
+	label: 'Intro',
+}, 
+{
+	type: 'category',
+      label: 'Deploy a Docusauraus Site on Vercel',
+      items: [
+        'devops-cloud/overview',
+        'devops-cloud/setup',
+        'devops-cloud/step_by_step',
+        'devops-cloud/troubleshooting',
+        'devops-cloud/summary',
+        'devops-cloud/reflection',
+	  ]
+}
+	],
+	  
 };
 
 export default sidebars;
