@@ -6,11 +6,11 @@ sidebar_position: 6
 
 ## What I Learned
 
-- **Good documentation requires testing every single step.** I couldn't just write from memory—I had to follow my own instructions from scratch. This caught issues like forgetting to mention committing changes before pushing or not explaining what the `--force` flag does.
+- **Good documentation requires testing every single step.** I couldn't just write from memory. I had to follow my own instructions from scratch. This caught issues like forgetting to mention committing changes before pushing or not explaining what the `--force` flag does.
 
 - **Structure matters as much as content.** My first draft was one long page that would've been overwhelming. Breaking it into separate files (setup, step-by-step, troubleshooting, summary) made the information more digestible.
 
-- **Documentation architecture is a real thing.** How you organize information affects how usable it is. Users rarely read linearly—they jump to what they need, so navigation and structure are crucial.
+- **Documentation architecture is a real thing.** How you organize information affects how usable it is. Users rarely read linearly. They tend to go to the sections that contain the information they need, so navigation and structure are crucial.
 
 - **Writing for people who can't ask follow-up questions is different.** In conversations, you can clarify information on the spot. With documentation, you get one chance to be clear, which made me reconsider almost every sentence.
 
@@ -28,9 +28,9 @@ sidebar_position: 6
 
 ## Key Takeaways
 
-- **Always test your own instructions.** If you can't follow your own docs from start to finish, neither can anyone else. Walking through my guide caught so many missing steps.
+- **Always test your own instructions.** If you can't follow your own steps from start to finish, neither can anyone else. Reviewing my guide helped me avoid so many missing steps.
 
-- **Error messages are documentation gold.** Real problems with real solutions (like my sidebar configuration error) are more valuable than hypothetical scenarios. Users searching for errors want exact matches.
+- **Error messages are documentation gold.** Real problems with real solutions (like the sidebar configuration error) are more valuable than hypothetical scenarios. Users searching for errors want exact matches.
 
 - **Visual hierarchy increases readability.** Strategic use of headings, bold text, code blocks, and admonitions makes docs scannable. People jump to what they need rather than reading everything.
 
