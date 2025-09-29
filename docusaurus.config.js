@@ -114,7 +114,7 @@ const config = {
           {
             title: "Portfolio",
             items: [
-              { label: "Projects", to: "/projects" },
+              { label: "Projects", to: "/projects/projects" },
               { label: "Resume", to: "/resume" }
             ],
           },
