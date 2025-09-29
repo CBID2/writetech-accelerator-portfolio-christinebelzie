@@ -35,4 +35,3 @@ sidebar_position: 6
 - **Visual hierarchy increases readability.** Strategic use of headings, bold text, code blocks, and admonitions makes docs scannable. People jump to what they need rather than reading everything.
 
 - **Audience definition shapes everything.** At first, I was not sure who the audience was, but then I remembered it was supposed to user-friendly and developer-focused. From there, my decisions about detail level, tone, and what to explain became much easier.
-
