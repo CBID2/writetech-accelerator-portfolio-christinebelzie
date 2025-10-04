@@ -63,3 +63,11 @@ A curated selection of documentation projects I’ve worked on, including API do
 🌐 [View Troubleshooting Guide](/docs/devops-cloud/troubleshooting)
 📝 [View Summary](/docs/devops-cloud/summary)
 📝 [Check out my reflection](/docs/devops-cloud/reflection)
+
+### Web3 Documentation 
+  Content on [add placeholder text here]
+
+[View intro](/docs/web3-documentation/intro)
+
+👉 [View user guide](/docs/web3-documentation/user-guide)
+📝 [Check out my reflection](/docs/web3-documentation/reflection.md)
