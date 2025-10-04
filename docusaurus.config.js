@@ -70,7 +70,7 @@ const config = {
     ({
       image: "img/social-card.jpg",
       navbar: {
-        title: "Christine's Portfolio",
+        title: "Christine Belzie's Portfolio",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.png",

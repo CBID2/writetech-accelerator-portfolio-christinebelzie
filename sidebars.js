@@ -132,7 +132,21 @@ const sidebars = {
 	  ]
 }
 	],
-	  
+	web3DocumentationSidebar: [
+		{
+	type: 'doc',
+	id: 'web3-documentation/intro',
+	label: 'Intro',
+}, 
+{
+	type: 'category',
+      label: 'End User Guide',
+      items: [
+        'web3-documentation/user-guide',
+        'web3-documentation/reflection',
+	  ]
+}
+	],
 };
 
 export default sidebars;
