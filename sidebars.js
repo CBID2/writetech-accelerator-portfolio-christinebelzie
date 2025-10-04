@@ -132,7 +132,12 @@ const sidebars = {
 	  ]
 }
 	],
-	  
+	web3DocumentationSidebar: [
+		{
+	type: 'doc',
+	id: 'web3-documentation/intro',
+	label: 'Intro',
+},   ]
 };
 
 export default sidebars;
