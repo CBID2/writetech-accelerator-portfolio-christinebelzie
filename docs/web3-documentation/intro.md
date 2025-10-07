@@ -5,18 +5,17 @@ title: intro
 
 # Web3 Documentation Project
 
-This project is part of the WriteTech Accelerator Programme and explores technical writing in the Web3 ecosystem. I chose [Option A/B/C] and created documentation to improve accessibility and understanding of decentralized tools and APIs.
+This project is part of the WriteTech Accelerator Programme and explores technical writing in the Web3 ecosystem. I chose to create an improved version of Lens user guide
 
-## 🔀 Option Chosen
-[Brief description of what you chose and why.]
+## Reasoning
 
-## 📄 Files Included
+I chose this to gain more experience in writing content for Web3 Apps 
+
+##  Files Included
 
 | File            | Description |
 |-----------------|-------------|
-| api.md          | API documentation for selected Web3 endpoints |
 | user-guide.md   | End-user guide for a Web3 tool or dApp |
-| whitepaper.md   | 1–2 page white paper for a fictional or real project |
 | reflection.txt  | (Optional) Notes on what I learned or challenges I faced |
 
 
