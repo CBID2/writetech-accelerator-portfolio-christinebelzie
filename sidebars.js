@@ -32,13 +32,14 @@ const sidebars = {
 			id: 'documentation-tooling/intro',
 		},
 		{
-			type: 'category',
+			type: 'doc',
 			label: 'Getting Started',
+			id: 'documentation-tooling/getting-started',
+		},
+		{
+			type: 'category',
+			label: 'Guides',
 			collapsed: false,
-			link: {
-				type: 'doc',
-				id: 'documentation-tooling/getting-started',
-			},
 			items: [
 				'documentation-tooling/guides/quick-start-guide',
 				{

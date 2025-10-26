@@ -107,6 +107,13 @@ const config = {
             className: 'navbar__item--projects',
           },
           {
+            type: 'doc',
+            docId: 'documentation-tooling/getting-started',
+            position: 'left',
+            label: 'Getting Started',
+            className: 'navbar__item--getting-started',
+          },
+          {
             type: 'dropdown',
             label: 'Documentation',
             position: 'left',
@@ -115,6 +122,11 @@ const config = {
                 type: 'doc',
                 docId: 'documentation-tooling/intro',
                 label: 'Documentation Tooling',
+              },
+              {
+                type: 'doc',
+                docId: 'documentation-tooling/getting-started',
+                label: 'Getting Started',
               },
               {
                 type: 'doc',
