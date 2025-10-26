@@ -95,30 +95,6 @@ const config = {
             className: 'navbar__item--projects',
           },
           {
-            type: 'doc',
-            docId: 'documentation-tooling/getting-started',
-            position: 'left',
-            label: 'Documentation',
-            className: 'navbar__item--getting-started',
-          },
-          {
-            type: 'dropdown',
-            label: 'Documentation',
-            position: 'left',
-            items: [
-              {
-                type: 'doc',
-                docId: 'documentation-tooling/intro',
-                label: 'Documentation Tooling',
-              },
-              {
-                type: 'doc',
-                docId: 'api-documentation/intro',
-                label: 'API Documentation',
-              },
-            ],
-          },
-          {
             to: '/technical-articles',
             position: 'left',
             label: 'Technical Articles',
