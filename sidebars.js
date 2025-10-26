@@ -27,19 +27,15 @@ const sidebars = {
 	],
 
 	toolingSidebar: [
-		{
-			type: 'doc',
-			label: 'Overview',
-			id: 'documentation-tooling/intro',
-		},
+		'documentation-tooling/intro',
+		'documentation-tooling/getting-started-guide',
+		'documentation-tooling/guides/quick-start-guide',
 		{
 			type: 'category',
-			label: 'Getting Started',
-			collapsed: false,
+			label: 'Installation Guides',
 			items: [
-				'documentation-tooling/quick-overview',
-				'documentation-tooling/guides/browser-extension-installation',
-				'documentation-tooling/guides/pwa-installation-guide',
+				'documentation-tooling/guides/browser-extension-installation-guide',
+				'documentation-tooling/guides/pwa-installation-guide'
 			],
 		},
 	],

@@ -7,7 +7,7 @@ This project involved auditing and restructuring documentation for [daily.dev](h
 
 ## Table of Contents
 
-1. [Quick Overview](quick-overview) - Introduction to daily.dev and initial setup
+1. [Getting Started](getting-started) - Introduction to daily.dev and initial setup
 2. [Quick Start Guide](guides/quick-start-guide) - Fast track to using daily.dev
 3. [Browser Extension Installation](guides/browser-extension-installation-guide) - Install the daily.dev browser extension
 4. [PWA Installation](guides/pwa-installation-guide) - Set up the Progressive Web App
