@@ -46,7 +46,7 @@ const sidebars = {
 					label: 'Installation Guides',
 					collapsed: true,
 					items: [
-						'documentation-tooling/guides/browser-extension-installation-guide',
+						'documentation-tooling/guides/browser-extension-installation',
 						'documentation-tooling/guides/pwa-installation-guide',
 					],
 				},
