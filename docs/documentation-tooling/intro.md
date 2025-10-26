@@ -3,7 +3,7 @@
 ## Overview
 This project involved auditing and restructuring documentation for [daily.dev](https://daily.dev) using Docusaurus to create a clean, scalable, and user-friendly docs-as-code workflow.
 
-![daily.dev homepage](/static/img/daily-dev-homepage.png)
+![daily.dev homepage](../../static/img/daily-dev-homepage.png)
 
 ## Table of Contents
 
