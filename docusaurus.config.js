@@ -102,8 +102,7 @@ const config = {
           {
             to: '/resume',
             position: 'right',
-            label: 'Resume',
-            className: 'navbar__item--resume',
+            label: 'Resume'
           },
           {
             type: 'search',
