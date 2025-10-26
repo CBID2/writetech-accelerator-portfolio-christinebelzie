@@ -95,6 +95,13 @@ const config = {
             className: 'navbar__item--projects',
           },
           {
+            type: 'doc',
+            docId: 'documentation-tooling/quick-overview',
+            position: 'left',
+            label: 'Quick Overview',
+            className: 'navbar__item--getting-started',
+          },
+          {
             type: 'dropdown',
             label: 'Documentation',
             position: 'left',
