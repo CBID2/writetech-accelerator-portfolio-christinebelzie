@@ -44,30 +44,42 @@ const config = {
     ],
   ],
 
-  // plugins: [
-  //   [
-  //     "docusaurus-plugin-openapi-docs",
-  //     {
-  //       id: "chimoney",
-  //       docsPluginId: "classic",
-  //       config: {
-  //         chimoney: {
-  //           specPath: "docs/api-documentation/chimoney-spec.yaml",
-  //           outputDir: "docs/api-documentation/chimoney",
-  //           sidebarOptions: {
-  //             groupPathsBy: "tag",
-  //           },
-  //         },
-  //       },
-  //     },
-  //   ],
-  // ],
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-XXXXXXXXXX', // Replace with your actual Google Analytics 4 Measurement ID
+        anonymizeIP: true,
+      },
+    ],
+    // [
+    //   "docusaurus-plugin-openapi-docs",
+    //   {
+    //     id: "chimoney",
+    //     docsPluginId: "classic",
+    //     config: {
+    //       chimoney: {
+    //         specPath: "docs/api-documentation/chimoney-spec.yaml",
+    //         outputDir: "docs/api-documentation/chimoney",
+    //         sidebarOptions: {
+    //           groupPathsBy: "tag",
+    //         },
+    //       },
+    //     },
+    //   },
+    // ],
+  ],
 
   // themes: ["docusaurus-theme-openapi-docs"],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Google Analytics configuration
+      analytics: {
+        trackingID: 'G-MYPFH9VS7P',
+        anonymizeIP: true, // Enable IP anonymization
+      },
       image: "img/social-card.jpg",
       navbar: {
         title: "Christine Belzie's Portfolio",
