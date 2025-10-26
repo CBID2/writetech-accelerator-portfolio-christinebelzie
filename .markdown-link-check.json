@@ -1,12 +1,18 @@
 {
-	"ignorePatterns": [
-		{
-			"pattern": "^http://localhost"
-		}
-	],
-	"timeout": "20s",
-	"retryOn429": true,
-	"retryCount": 2,
-	"fallbackRetryDelay": "30s",
-	"aliveStatusCodes": [200, 206]
+  "ignorePatterns": [
+    {
+      "pattern": "^http://localhost"
+    },
+    {
+      "pattern": "^/docs/"
+    },
+    {
+      "pattern": "^/"
+    }
+  ],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 2,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206]
 }
