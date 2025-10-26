@@ -37,7 +37,7 @@ const sidebars = {
 			label: 'Getting Started',
 			collapsed: false,
 			items: [
-				'documentation-tooling/getting-started',
+				'documentation-tooling/quick-overview',
 				'documentation-tooling/guides/browser-extension-installation',
 				'documentation-tooling/guides/pwa-installation-guide',
 			],

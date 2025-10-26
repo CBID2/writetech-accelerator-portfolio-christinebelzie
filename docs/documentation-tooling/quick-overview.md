@@ -1,6 +1,6 @@
 ---
-id: getting-started
-title: Getting Started
+id: quick-overview
+title: Quick Overview
 ---
 
 # Getting Started with daily.dev

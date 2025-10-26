@@ -108,9 +108,9 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'documentation-tooling/getting-started',
+            docId: 'documentation-tooling/quick-overview',
             position: 'left',
-            label: 'Getting Started',
+            label: 'Quick Overview',
             className: 'navbar__item--getting-started',
           },
           {
@@ -125,8 +125,8 @@ const config = {
               },
               {
                 type: 'doc',
-                docId: 'documentation-tooling/getting-started',
-                label: 'Getting Started',
+                docId: 'documentation-tooling/quick-overview',
+                label: 'Quick Overview',
               },
               {
                 type: 'doc',

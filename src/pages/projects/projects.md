@@ -46,7 +46,7 @@ A curated selection of documentation projects I’ve worked on, including API do
 ### Documentation Tooling 
   User guides for developer tools (browser extensions, PWAs) with quick-start guides.  
 
-👉 [View Getting Started guide](/docs/documentation-tooling/getting-started)
+👉 [View Quick Overview](/docs/documentation-tooling/quick-overview)
 👉 [View Quick Start Guide](/docs/documentation-tooling/guides/quick-start-guide)
 👉 [View PWA Installation Guide](/docs/documentation-tooling/guides/pwa-installation-guide)
 🌐 [View Browser Extension Installation Guide](/docs/documentation-tooling/guides/browser-extension-installation-guide)
