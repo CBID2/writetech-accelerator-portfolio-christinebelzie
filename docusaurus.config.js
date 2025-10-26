@@ -77,29 +77,54 @@ const config = {
         },
         items: [
           {
-            to: '/', // Home page
+            to: '/',
             position: 'left',
             label: 'Home',
+            className: 'navbar__item--home',
           },
           {
             to: '/docs/about me',
             position: 'left',
             label: 'About Me',
+            className: 'navbar__item--about',
           },
           {
-            to: '/projects/projects', // Portfolio-focused projects showcase
+            to: '/projects/projects',
             position: 'left',
             label: 'Projects',
+            className: 'navbar__item--projects',
           },
           {
-            to: '/resume', // Resume page
+            type: 'dropdown',
+            label: 'Documentation',
             position: 'left',
-            label: 'Resume',
+            items: [
+              {
+                type: 'doc',
+                docId: 'documentation-tooling/intro',
+                label: 'Documentation Tooling',
+              },
+              {
+                type: 'doc',
+                docId: 'api-documentation/intro',
+                label: 'API Documentation',
+              },
+            ],
           },
           {
-            to: '/technical-articles', // Technical articles page
+            to: '/technical-articles',
             position: 'left',
             label: 'Technical Articles',
+          },
+          {
+            to: '/resume',
+            position: 'right',
+            label: 'Resume',
+            className: 'navbar__item--resume',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: "https://github.com/CBID2/writetech-accelerator-portfolio-christinebelzie",
