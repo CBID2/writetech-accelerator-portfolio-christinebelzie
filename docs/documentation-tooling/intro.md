@@ -1,29 +1,36 @@
-# Documentation Tooling Project (Docusaurus Site)
+# Documentation Tooling Project
 
+## Overview
 This project involved auditing and restructuring documentation for [daily.dev](https://daily.dev) using Docusaurus to create a clean, scalable, and user-friendly docs-as-code workflow.
 
 ![daily.dev homepage](/img/daily-dev-homepage.png)
 
-## Improved Pages
+## Table of Contents
 
-- **getting-started:** introduces users to daily.dev
-- **quick-start:** guides them through the quick start process.
-- **Browser Extension Installation Guide:** Step-by-step instructions on how to install the daily.dev browser extension. Made step headings scannable and action-oriented.
-- **PWA Installation Guide:** Step-by-step instructions on how to install the daily.dev PWA. Made step headings scannable and action-oriented.
-  
-:::success Improvements Included
+1. [Getting Started](getting-started) - Introduction to daily.dev and initial setup
+2. [Quick Start Guide](guides/quick-start-guide) - Fast track to using daily.dev
+3. [Browser Extension Installation](guides/browser-extension-installation-guide) - Install the daily.dev browser extension
+4. [PWA Installation](guides/pwa-installation-guide) - Set up the Progressive Web App
 
-- **Simplified Navigation:** Placed the **Quick Start** section in its own page for easier navigation.
-- **Shorter Steps:** Simplified the **Browser Extension Installation** and **PWA Installation** guides by making it more action-oriented and scannable.
-- **Increase user buy-in:** Explained why daily.dev is a great place for developers to learn, share, and network.
-:::
+## Documentation Improvements
 
-## Challenges
+### Navigation Enhancements
+- Reorganized content into clear, logical sections
+- Created a consistent navigation structure
+- Added cross-linking between related topics
 
-- Auditing daily.dev's current documentation
-- Restructuring improved versions for scalability while keeping it beginner-friendly.
+### Content Improvements
+- Streamlined installation guides with clear, actionable steps
+- Improved scannability with consistent heading structures
+- Enhanced explanations of key features and benefits
 
-## What I Learnt
+### Technical Implementation
+- Implemented a Docs-as-Code workflow using Docusaurus
+- Established version control for documentation
+- Set up automated build and deployment processes
 
-- How to implement a **Docs-as-Code** workflow using Docusaurus.
-- To not get stuck in the auditing process and just start working
+## Key Learnings
+- The importance of user-centered documentation design
+- Benefits of maintaining documentation as code
+- How to balance comprehensive coverage with readability
+- The value of iterative improvement based on user feedback
